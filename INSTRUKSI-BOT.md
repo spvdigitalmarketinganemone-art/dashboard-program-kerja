@@ -48,7 +48,7 @@ Kirim ringkasan singkat:
 - To-do yang berubah: id, isi singkat, status lama → status baru.
 - KPI minggu itu: aktual vs target, tercapai atau belum.
 - Poin report yang tidak bisa dicocokkan atau sengaja tidak disimpan, beserta alasannya.
-- Link dashboard.
+- Link dashboard: https://dashboard-program-kerja.spv-digitalmarketinganemone.workers.dev (dilindungi Cloudflare Access; kamu tidak perlu membukanya, cukup sertakan link-nya).
 
 ## Contoh
 Report SPV:

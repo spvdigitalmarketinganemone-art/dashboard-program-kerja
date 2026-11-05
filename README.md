@@ -2,7 +2,8 @@
 
 Dashboard interaktif program kerja bulanan tim Digital Marketing: target & to-do mingguan, Funnel A (Paid Ads), Organik (SMS), dan rekap target vs realisasi per bulan.
 
-- **Dashboard:** `<isi link dashboard setelah di-hosting>`
+- **Dashboard:** https://dashboard-program-kerja.spv-digitalmarketinganemone.workers.dev
+- **Hosting:** Cloudflare Workers (akun Cloudflare tim DM), dilindungi Cloudflare Access: hanya email yang diizinkan yang bisa membuka. Otomatis deploy ulang setiap ada commit ke branch `main`.
 - **Program kerja November 2026 (teks):** [docs/program-kerja-dm-november-2026.md](docs/program-kerja-dm-november-2026.md)
 
 ## Cara update

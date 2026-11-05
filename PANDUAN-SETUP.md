@@ -10,14 +10,24 @@ Akun GitHub: akun tim DM (spv.digitalmarketinganemone@gmail.com). Nama menu di G
 ## 2. Hosting dashboard
 Pilih salah satu.
 
-### Opsi A (disarankan): Cloudflare Pages + Access — hanya tim yang bisa membuka
+### Opsi A (disarankan, dipakai sekarang): Cloudflare Workers + Access — hanya tim yang bisa membuka
 Gratis, dan dashboard hanya bisa dibuka oleh email yang diizinkan.
+
+**Setup yang berjalan sekarang:**
+- Dashboard: https://dashboard-program-kerja.spv-digitalmarketinganemone.workers.dev
+- Preview per branch: `*-dashboard-program-kerja.spv-digitalmarketinganemone.workers.dev`
+- Worker `dashboard-program-kerja`, tersambung ke repo GitHub `spvdigitalmarketinganemone-art/dashboard-program-kerja`, branch `main`.
+- Build command: kosong (None). Deploy command: `npx wrangler deploy`. Root directory: `/`.
+
+**Langkah kalau perlu membuat ulang:**
 1. Buat akun Cloudflare (gratis).
-2. Di menu **Workers & Pages**, buat project **Pages** baru dan sambungkan ke repo GitHub `dashboard-program-kerja`.
-3. Pengaturan build: framework **None**, build command **dikosongkan**, output directory `/`.
-4. Setelah deploy, dashboard punya alamat seperti `dashboard-program-kerja.pages.dev`.
-5. Di menu **Zero Trust → Access**, buat aplikasi untuk alamat tersebut, lalu buat aturan yang hanya mengizinkan email anggota tim dan management (login dengan kode yang dikirim ke email). Paket gratis cukup untuk sampai 50 orang.
-6. Setiap kali bot menyimpan perubahan di GitHub, Cloudflare otomatis memperbarui dashboard dalam 1–2 menit.
+2. Di menu **Workers & Pages**, buat project baru dan sambungkan ke repo GitHub `dashboard-program-kerja`. (Cloudflare sekarang membuatnya sebagai **Worker**, bukan Pages. Hasilnya sama.)
+3. Pengaturan build: build command **dikosongkan**, deploy command `npx wrangler deploy`, root directory `/`.
+4. Setelah deploy, dashboard punya alamat `dashboard-program-kerja.<nama-akun>.workers.dev`.
+5. Di Worker tersebut buka **Settings → Domains & Routes**, lalu klik **Enable Access** di baris **Production** dan **Preview**. Keduanya harus aktif. Kalau masih tertulis "Anyone with this URL can visit", dashboard dan file data masih terbuka untuk publik.
+6. Di **Zero Trust → Access → Applications**, atur policy aplikasinya: **Allow**, hanya email anggota tim dan management, login dengan **One-time PIN** (kode yang dikirim ke email). Paket gratis cukup untuk sampai 50 orang.
+7. Tes di jendela incognito: halaman login Cloudflare harus muncul sebelum dashboard, dan email yang tidak terdaftar harus ditolak.
+8. Setiap kali bot menyimpan perubahan di GitHub, Cloudflare otomatis memperbarui dashboard dalam 1–2 menit.
 
 ### Opsi B: GitHub Pages — siapa pun yang punya link bisa membuka
 Lebih sederhana, tapi **datanya terbuka**. Di paket GitHub gratis, GitHub Pages hanya bisa dipakai kalau repo-nya **Public**, artinya file data (budget, CPMQL) juga bisa dibaca siapa saja.
