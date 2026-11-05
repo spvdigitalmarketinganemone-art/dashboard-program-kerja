@@ -150,8 +150,8 @@ Minggu kerja Senin–Sabtu. Minggu 1 hanya berisi pekerjaan prasyarat di akhir m
   *Selesai kalau:* Draf target 2027 jadi, status budgeting diketahui · *KPI:* Target & budget 2027
 - [ ] **SPV:** Jum 6 Nov: kirim target November ke atasan, plus penjelasan definisi MQL baru (per 5 Nov)  
   *Selesai kalau:* Atasan sudah terima target dan penjelasannya · *KPI:* Semua KPI Ads Franchise
-- [ ] **Paid Ads:** Jum 6 Nov: kirim brief 2 iklan testimoni ke CC; pastikan mitra setuju wajahnya dipakai (kandidat: Mr. Yogi)  
-  *Selesai kalau:* Sudah dikonfirmasi tim · *KPI:* MQL, CPMQL
+- [ ] **Paid Ads:** Cari 2 franchisee yang bersedia jadi iklan testimoni (wajahnya dipakai)  
+  *Selesai kalau:* 2 franchisee setuju, hasilnya dilaporkan Jum 6 Nov · *KPI:* MQL, CPMQL
 - [ ] **SMS:** Jum 6 Nov: kirim brief konten Minggu 2 ke CC (komposisi IG baru)  
   *Selesai kalau:* Brief diterima CC Jum 6 Nov · *KPI:* Views
 - [ ] **Paid Ads:** Jum 6–Sab 7 Nov: buat draf 1 halaman hasil rapat sales untuk dikoreksi SPV  
