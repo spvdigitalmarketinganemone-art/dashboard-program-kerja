@@ -150,16 +150,12 @@ Minggu kerja Senin–Sabtu. Minggu 1 hanya berisi pekerjaan prasyarat di akhir m
   *Selesai kalau:* Draf target 2027 per bulan & kuartal (sementara sama dengan 2026) jadi, dan status budgeting 2027 diketahui · *KPI:* Target & budget 2027
 - [ ] **SPV:** Jum 6 Nov — Kirim target November ke atasan: jelaskan beda angka CPMQL di sheet vs Dashboard KPI, dan bahwa definisi MQL berubah per 5 Nov (cukup modal siap). Target tetap 39 MQL & CPMQL ≤ Rp 385 rb, dinilai setara dengan Booking Fee & CPBF  
   *Selesai kalau:* Atasan menerima target November, penjelasan basis angka, dan perubahan definisi MQL per 5 Nov · *KPI:* Semua KPI Funnel A
-- [ ] **SPV:** Jum 6 Nov — Tentukan pembagian budget iklan dan target MQL untuk tiap Paid Ads Specialist  
-  *Selesai kalau:* Tiap Paid Ads Specialist punya angka budget dan target MQL sendiri · *KPI:* MQL, CPMQL
 - [ ] **Paid Ads:** Jum 6 Nov — Kirim brief 2 iklan testimoni mitra ke CC, dan minta tim franchise memastikan mitra sudah setuju wajahnya dipakai. Kandidat: Mr. Yogi (SPP-nya terbilang mahal tapi outletnya tetap grow)  
   *Selesai kalau:* Brief 2 iklan testimoni diterima CC dan izin mitra sudah dikonfirmasi tim franchise · *KPI:* MQL, CPMQL
 - [ ] **SMS:** Jum 6 Nov — Kirim brief konten Minggu 2 ke CC dengan komposisi baru IG: 1 Reels Isu Pendidikan, 2 Reels Edukasi, 1 Reels Franchise, 1 Reels rekap Grand Opening (aturan 5 hari dikecualikan untuk minggu ini)  
   *Selesai kalau:* Brief konten Minggu 2 diterima CC paling lambat Jum 6 Nov · *KPI:* Views
 - [ ] **Paid Ads:** Jum 6–Sab 7 Nov — Buat draf 1 halaman hasil rapat sales untuk dikoreksi SPV: pakai report rapat 5 Nov sebagai dasar, lalu lengkapi poin yang belum dibahas (alur umpan balik, pencatatan alasan tidak lanjut, kecepatan respon, closing)  
   *Selesai kalau:* Draf 1 halaman dikirim ke SPV paling lambat Sab 7 Nov pagi · *KPI:* MQL, No Response
-- [ ] **SPV:** Sab 7 Nov — Koreksi dan setujui dokumen 1 halaman hasil rapat sales, lalu bagikan ke tim dan sales  
-  *Selesai kalau:* Dokumen 1 halaman sudah dibagikan ke tim dan sales · *KPI:* MQL, No Response
 - [ ] **CC:** Sab 7 Nov — Atur jadwal syuting testimoni mitra bersama tim franchise  
   *Selesai kalau:* Tanggal dan lokasi syuting testimoni disepakati dengan tim franchise dan mitra · *KPI:* MQL
 - [ ] **SMS:** Perbaiki caption placeholder di konten IG 3 Agu (Carousel Edukasi)  

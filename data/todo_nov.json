@@ -182,19 +182,6 @@
   "catatan": null
  },
  {
-  "id": "t10",
-  "minggu": "1",
-  "pic": "SPV",
-  "todo": "Jum 6 Nov — Tentukan pembagian budget iklan dan target MQL untuk tiap Paid Ads Specialist",
-  "status": "Belum",
-  "jenis": "Fondasi",
-  "selesai_kalau": "Tiap Paid Ads Specialist punya angka budget dan target MQL sendiri",
-  "kpi": "MQL, CPMQL",
-  "dampak": "Setiap orang bertanggung jawab atas angkanya sendiri",
-  "hasil_aktual": null,
-  "catatan": null
- },
- {
   "id": "t11",
   "minggu": "1",
   "pic": "Paid Ads",
@@ -230,19 +217,6 @@
   "selesai_kalau": "Draf 1 halaman dikirim ke SPV paling lambat Sab 7 Nov pagi",
   "kpi": "MQL, No Response",
   "dampak": "Dokumen resmi cepat jadi tanpa menambah beban SPV",
-  "hasil_aktual": null,
-  "catatan": null
- },
- {
-  "id": "t14",
-  "minggu": "1",
-  "pic": "SPV",
-  "todo": "Sab 7 Nov — Koreksi dan setujui dokumen 1 halaman hasil rapat sales, lalu bagikan ke tim dan sales",
-  "status": "Belum",
-  "jenis": "Fondasi",
-  "selesai_kalau": "Dokumen 1 halaman sudah dibagikan ke tim dan sales",
-  "kpi": "MQL, No Response",
-  "dampak": "Definisi Warm & Hot berlaku mulai Senin 9 Nov",
   "hasil_aktual": null,
   "catatan": null
  },
