@@ -128,7 +128,7 @@ Minggu kerja Senin–Sabtu. Minggu 1 hanya berisi pekerjaan prasyarat di akhir m
   *Selesai kalau:* Laporan masuk dan angkanya sama dengan sales · *KPI:* MQL, BF
 - [ ] **Paid Ads:** Tiap Jumat (mulai 13 Nov): tukar umpan balik leads dengan sales  
   *Selesai kalau:* Catatan umpan balik tersimpan tiap Jumat · *KPI:* MQL, No Response
-- [ ] **Paid Ads:** Tiap Jumat: laporkan rasio MQL → BF, CPBF, dan potensi BF beserta kendalanya (tanpa nama calon mitra)  
+- [ ] **Paid Ads:** Tiap Jumat: laporkan rasio MQL → BF, CPBF, dan potensi BF beserta kendalanya (nama & kota tiap calon mitra)  
   *Selesai kalau:* Laporan Jumat memuat ketiga angka itu · *KPI:* MQL, BF, CPBF
 - [ ] **Paid Ads:** Tiap Jumat (mulai 13 Nov): rangkum alasan leads tidak lanjut, lalu perbaiki iklan atau targeting  
   *Selesai kalau:* 3 alasan teratas dan perbaikan yang sudah dijalankan · *KPI:* MQL, No Response
