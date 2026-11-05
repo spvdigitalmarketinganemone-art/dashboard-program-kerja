@@ -118,76 +118,80 @@ Pembagian target per Paid Ads Specialist menyusul setelah porsi budget per orang
 Minggu kerja Senin–Sabtu. Minggu 1 hanya berisi pekerjaan prasyarat di akhir minggu (5–7 Nov). Tiap to-do punya kriteria selesai dan KPI yang didukung; status terbaru ada di dashboard.
 
 ### Rutin tiap minggu
-- [ ] **Paid Ads:** Cek CPMQL setiap hari. Kalau total sejak awal bulan sudah lebih dari Rp 420 rb, kurangi dulu budget iklan dan lapor ke SPV  
-  *Selesai kalau:* CPMQL kumulatif dicatat tiap hari kerja; setiap kali lewat Rp 420 rb, SPV dikabari hari itu juga · *KPI:* CPMQL
-- [ ] **SMS:** Setiap Senin pagi, catat jumlah followers semua akun (screenshot dari aplikasinya), plus jumlah follow dan unfollow IG Anemone, lalu hitung rasio unfollow  
-  *Selesai kalau:* Angka followers 5 akun dan follow/unfollow IG tercatat tiap Senin sebelum jam 10 · *KPI:* Followers
-- [ ] **SMS, Paid Ads:** Setiap Rabu, kirim brief konten minggu depan ke CC, supaya CC punya waktu minimal 5 hari untuk produksi. Mulai Minggu 4 wajib memakai template brief baru  
-  *Selesai kalau:* Brief minggu depan diterima CC tiap Rabu; mulai Minggu 4 memakai template baru · *KPI:* Ketepatan brief, Views
-- [ ] **Semua:** Setiap Jumat: setor laporan mingguan, cocokkan jumlah MQL & BF dengan data tim sales, lalu ikut weekly meeting  
-  *Selesai kalau:* Laporan masuk tiap Jumat dan angka MQL & BF sudah sama dengan data sales · *KPI:* MQL, BF
-- [ ] **Paid Ads:** Setiap Jumat mulai 13 Nov, tukar umpan balik leads dengan sales: kendala leads dari sisi sales dan hasil obrolan dengan calon mitra  
-  *Selesai kalau:* Catatan umpan balik tiap Jumat tersimpan (kendala leads, hasil obrolan), mulai 13 Nov · *KPI:* MQL, No Response
-- [ ] **Paid Ads:** Setiap Jumat: catat di laporan bahwa definisi MQL berubah per 5 Nov, pantau rasio MQL → Booking Fee dan CPBF, serta jumlah potensi Booking Fee beserta kendalanya (tanpa menyebut nama calon mitra)  
-  *Selesai kalau:* Laporan Jumat memuat rasio MQL → BF, CPBF, dan jumlah potensi BF per kendala · *KPI:* MQL, BF, CPBF
-- [ ] **Paid Ads:** Setiap Jumat mulai 13 Nov, setelah tukar umpan balik dengan sales: rangkum alasan leads tidak lanjut, lalu ubah jadi perbaikan targeting atau iklan  
-  *Selesai kalau:* Tiap minggu: 3 alasan teratas leads tidak lanjut, plus perubahan targeting atau iklan yang sudah dijalankan · *KPI:* MQL, No Response
-- [ ] **CC:** Produksi 1 Reels Isu Pendidikan per minggu, menunggangi isu aktual (SPMB, kurikulum, rapor, libur sekolah)  
-  *Selesai kalau:* 1 Reels Isu Pendidikan tayang tiap minggu · *KPI:* Views, Followers
-- [ ] **CC:** Produksi 2 Reels Edukasi per minggu dengan hook masalah nyata orang tua (contoh: anak belum lancar baca)  
-  *Selesai kalau:* 2 Reels Edukasi tayang tiap minggu · *KPI:* Views, Followers
-- [ ] **SMS:** Ganti posting Grand Opening per outlet dengan 1 Reels rekap per minggu; detail per outlet pindah ke Story/Highlight (setelah disetujui Franchise Support)  
-  *Selesai kalau:* Porsi Grand Opening di feed IG ≤ 20% dari total konten · *KPI:* Views
-- [ ] **SMS:** Jadwalkan konten unggulan (Isu Pendidikan, Edukasi) di Kamis–Jumat  
-  *Selesai kalau:* Minimal 2 konten unggulan per minggu tayang Kamis atau Jumat · *KPI:* Views, Followers
+- [ ] **Paid Ads:** Cek CPMQL tiap hari. Kalau lewat Rp 420 rb, kurangi budget dan lapor SPV  
+  *Selesai kalau:* CPMQL dicatat tiap hari; lapor SPV hari itu juga kalau lewat Rp 420 rb · *KPI:* CPMQL
+- [ ] **SMS:** Tiap Senin pagi: catat followers semua akun, plus follow/unfollow IG Anemone  
+  *Selesai kalau:* Tercatat tiap Senin sebelum jam 10 · *KPI:* Followers
+- [ ] **SMS, Paid Ads:** Tiap Rabu: kirim brief minggu depan ke CC (min. 5 hari sebelum tayang). Mulai Minggu 4 pakai template baru  
+  *Selesai kalau:* Brief diterima CC tiap Rabu · *KPI:* Ketepatan brief, Views
+- [ ] **Semua:** Tiap Jumat: setor laporan, samakan angka MQL & BF dengan sales, ikut weekly meeting  
+  *Selesai kalau:* Laporan masuk dan angkanya sama dengan sales · *KPI:* MQL, BF
+- [ ] **Paid Ads:** Tiap Jumat (mulai 13 Nov): tukar umpan balik leads dengan sales  
+  *Selesai kalau:* Catatan umpan balik tersimpan tiap Jumat · *KPI:* MQL, No Response
+- [ ] **Paid Ads:** Tiap Jumat: laporkan rasio MQL → BF, CPBF, dan potensi BF beserta kendalanya (tanpa nama calon mitra)  
+  *Selesai kalau:* Laporan Jumat memuat ketiga angka itu · *KPI:* MQL, BF, CPBF
+- [ ] **Paid Ads:** Tiap Jumat (mulai 13 Nov): rangkum alasan leads tidak lanjut, lalu perbaiki iklan atau targeting  
+  *Selesai kalau:* 3 alasan teratas dan perbaikan yang sudah dijalankan · *KPI:* MQL, No Response
+- [ ] **CC:** 1 Reels Isu Pendidikan per minggu, ikut isu terkini (SPMB, kurikulum, rapor)  
+  *Selesai kalau:* Tayang tiap minggu · *KPI:* Views, Followers
+- [ ] **CC:** 2 Reels Edukasi per minggu, angkat masalah nyata orang tua  
+  *Selesai kalau:* Tayang tiap minggu · *KPI:* Views, Followers
+- [ ] **SMS:** Posting Grand Opening tiap outlet sesuai tanggal GO-nya  
+  *Selesai kalau:* Setiap outlet yang GO sudah terposting di tanggal GO-nya · *KPI:* Views
+- [ ] **SMS:** Tayangkan konten unggulan (Isu Pendidikan, Edukasi) di Kamis–Jumat  
+  *Selesai kalau:* Min. 2 konten unggulan per minggu di Kamis/Jumat · *KPI:* Views, Followers
 - [ ] **SMS:** Cek caption pakai checklist sebelum publish  
-  *Selesai kalau:* Semua konten lolos checklist sebelum tayang · *KPI:* Kualitas konten
+  *Selesai kalau:* Semua konten lolos checklist · *KPI:* Kualitas konten
 
 ### Minggu 1 (5–7 Nov) — prasyarat
-- [ ] **SPV:** Kam 5 atau Jum 6 Nov — Rapat dengan sales: samakan definisi Warm & Hot leads, sepakati alur umpan balik dua arah, serta pencatatan alasan leads tidak lanjut, kecepatan respon, dan hasil closing. Minta rekap MQL Oktober per campaign paling lambat Selasa 10 Nov  
-  *Selesai kalau:* Kesepakatan tertulis soal definisi Warm & Hot, alur umpan balik, dan cara mencatat alasan tidak lanjut, kecepatan respon, closing; sales setuju setor rekap MQL Oktober per campaign Sel 10 Nov · *KPI:* MQL, No Response, BF
-- [ ] **SPV:** Jum 6 Nov 10:00 — Petakan target 2027, sekaligus pastikan status Budgeting 2027 & Program  
-  *Selesai kalau:* Draf target 2027 per bulan & kuartal (sementara sama dengan 2026) jadi, dan status budgeting 2027 diketahui · *KPI:* Target & budget 2027
-- [ ] **SPV:** Jum 6 Nov — Kirim target November ke atasan: jelaskan beda angka CPMQL di sheet vs Dashboard KPI, dan bahwa definisi MQL berubah per 5 Nov (cukup modal siap). Target tetap 39 MQL & CPMQL ≤ Rp 385 rb, dinilai setara dengan Booking Fee & CPBF  
-  *Selesai kalau:* Atasan menerima target November, penjelasan basis angka, dan perubahan definisi MQL per 5 Nov · *KPI:* Semua KPI Ads Franchise
-- [ ] **Paid Ads:** Jum 6 Nov — Kirim brief 2 iklan testimoni mitra ke CC, dan minta tim franchise memastikan mitra sudah setuju wajahnya dipakai. Kandidat: Mr. Yogi (SPP-nya terbilang mahal tapi outletnya tetap grow)  
+- [ ] **SPV:** Kam 5/Jum 6 Nov: rapat dengan sales untuk samakan definisi Warm & Hot, alur umpan balik, dan cara catat alasan leads tidak lanjut. Minta rekap MQL Oktober per campaign (maks. Sel 10 Nov)  
+  *Selesai kalau:* Kesepakatan tertulis, dan sales setuju setor rekap Sel 10 Nov · *KPI:* MQL, No Response, BF
+- [ ] **SPV:** Jum 6 Nov 10:00: petakan target 2027 dan cek status Budgeting 2027  
+  *Selesai kalau:* Draf target 2027 jadi, status budgeting diketahui · *KPI:* Target & budget 2027
+- [ ] **SPV:** Jum 6 Nov: kirim target November ke atasan, plus penjelasan definisi MQL baru (per 5 Nov)  
+  *Selesai kalau:* Atasan sudah terima target dan penjelasannya · *KPI:* Semua KPI Ads Franchise
+- [ ] **Paid Ads:** Jum 6 Nov: kirim brief 2 iklan testimoni ke CC; pastikan mitra setuju wajahnya dipakai (kandidat: Mr. Yogi)  
   *Selesai kalau:* Sudah dikonfirmasi tim · *KPI:* MQL, CPMQL
-- [ ] **SMS:** Jum 6 Nov — Kirim brief konten Minggu 2 ke CC dengan komposisi baru IG: 1 Reels Isu Pendidikan, 2 Reels Edukasi, 1 Reels Franchise, 1 Reels rekap Grand Opening (aturan 5 hari dikecualikan untuk minggu ini)  
-  *Selesai kalau:* Brief konten Minggu 2 diterima CC paling lambat Jum 6 Nov · *KPI:* Views
-- [ ] **Paid Ads:** Jum 6–Sab 7 Nov — Buat draf 1 halaman hasil rapat sales untuk dikoreksi SPV: pakai report rapat 5 Nov sebagai dasar, lalu lengkapi poin yang belum dibahas (alur umpan balik, pencatatan alasan tidak lanjut, kecepatan respon, closing)  
-  *Selesai kalau:* Draf 1 halaman dikirim ke SPV paling lambat Sab 7 Nov pagi · *KPI:* MQL, No Response
-- [ ] **Paid Ads:** Sab 7 Nov — Atur jadwal syuting testimoni mitra bersama tim franchise  
-  *Selesai kalau:* Tanggal dan lokasi syuting testimoni disepakati dengan tim franchise dan mitra · *KPI:* MQL
+- [ ] **SMS:** Jum 6 Nov: kirim brief konten Minggu 2 ke CC (komposisi IG baru)  
+  *Selesai kalau:* Brief diterima CC Jum 6 Nov · *KPI:* Views
+- [ ] **Paid Ads:** Jum 6–Sab 7 Nov: buat draf 1 halaman hasil rapat sales untuk dikoreksi SPV  
+  *Selesai kalau:* Draf terkirim ke SPV Sab 7 Nov pagi · *KPI:* MQL, No Response
+- [ ] **Paid Ads:** Sab 7 Nov: atur jadwal syuting testimoni dengan tim franchise  
+  *Selesai kalau:* Tanggal dan lokasi syuting disepakati · *KPI:* MQL
 
 ### Minggu 2 (9–14 Nov)
-- [ ] **Paid Ads:** Pasang pertanyaan pembuka chat WhatsApp yang baru sesuai definisi MQL baru (utamakan kesiapan dan kisaran modal, lalu kota) dan daftar audiens yang tidak boleh ditarget (orang tua cari les, pencari kerja)  
-  *Selesai kalau:* Pertanyaan pembuka chat dan audiens yang dikecualikan aktif di semua iklan CTWA Ads Franchise paling lambat Rab 11 Nov · *KPI:* No Response, MQL
-- [ ] **Paid Ads:** Simpan template kolom di Meta Ads Manager (Impressions, 3-second video plays, format iklan), download ulang data Oktober, dan tarik data TikTok Ads Oktober  
-  *Selesai kalau:* Template kolom tersimpan; data Oktober Meta & TikTok Ads lengkap dengan hook rate · *KPI:* CPMQL
-- [ ] **Paid Ads:** Pantau biaya iklan tiap hari selama promo 11.11, karena biaya tayang iklan biasanya naik  
-  *Selesai kalau:* Biaya dan CPM harian 10–12 Nov tercatat; tindakan diambil kalau CPMQL lewat Rp 420 rb · *KPI:* CPMQL
-- [ ] **Paid Ads:** Crosscheck data yang tidak cocok dengan baseline Oktober, lalu laporkan hasilnya ke SPV  
-  *Selesai kalau:* Daftar selisih data beserta penjelasannya dilaporkan ke SPV · *KPI:* Akurasi data
-- [ ] **SMS:** Ambil angka followers semua akun per 1 November dari insights tiap platform, sebagai angka awal  
-  *Selesai kalau:* Angka followers per 1 Nov untuk 5 akun tercatat · *KPI:* Followers
-- [ ] **SMS:** Ambil data rata-rata durasi tonton dan riwayat pelanggaran (violation) bulan Oktober. Cek juga apakah ada video TikTok yang terupload ganda  
-  *Selesai kalau:* Rata-rata durasi tonton dan jumlah violation Oktober per akun tercatat; video TikTok ganda teridentifikasi · *KPI:* Views, Violation
-- [ ] **SMS:** Susun jadwal konten sisa November per pilar. IG 5 konten per minggu: 1 Isu Pendidikan, 2 Edukasi, 1 slot bebas menyesuaikan strategi yang sudah dibuat SMS, 1 rekap Grand Opening; konten unggulan di Kamis–Jumat. Kirim brief Minggu 3 ke CC (Rab 11 Nov)  
-  *Selesai kalau:* Jadwal konten sisa November jadi (per minggu 5 IG, 7 TikTok, 1–2 Life at) dan brief Minggu 3 diterima CC Rab 11 Nov · *KPI:* Views, Followers
-- [ ] **SMS:** Samakan cara menghitung "interaksi" yang diisi di dashboard, dan sambungkan akun Facebook ke Dashboard KPI  
-  *Selesai kalau:* Definisi interaksi tertulis dan Facebook terhubung ke Dashboard KPI · *KPI:* Views, Akurasi data
-- [ ] **CC:** Tambahkan kolom di Kanban: tanggal brief diterima, tanggal draf dikirim, dan tanggal tayang  
-  *Selesai kalau:* 3 kolom tanggal ada di Kanban dan terisi untuk semua brief sejak 9 Nov · *KPI:* Ketepatan brief
-- [ ] **SMS, CC:** Sepakati pembagian konten TikTok: berapa yang dibuat khusus TikTok dan berapa yang boleh adaptasi dari Reels IG, sesuai kapasitas CC  
-  *Selesai kalau:* Jumlah konten TikTok native vs adaptasi per minggu disepakati dan dicatat · *KPI:* Views
-- [ ] **CC:** Kumpulkan bank hook dari konten IG terbaik (SPMB 25 Jun, 4 Sep, 3 Jun) sebagai acuan script  
-  *Selesai kalau:* Minimal 10 contoh hook tercatat beserta polanya · *KPI:* Views
+- [ ] **Paid Ads:** Pasang pertanyaan pembuka chat WA baru (tanya modal dulu, lalu kota) dan kecualikan audiens tidak relevan (cari les, cari kerja)  
+  *Selesai kalau:* Aktif di semua iklan Ads Franchise maks. Rab 11 Nov · *KPI:* No Response, MQL
+- [ ] **Paid Ads:** Simpan template kolom Meta Ads, tarik ulang data Oktober Meta & TikTok Ads  
+  *Selesai kalau:* Template tersimpan, data Oktober lengkap · *KPI:* CPMQL
+- [ ] **Paid Ads:** Pantau biaya iklan harian selama promo 11.11  
+  *Selesai kalau:* Biaya harian 10–12 Nov tercatat; ada tindakan kalau CPMQL > Rp 420 rb · *KPI:* CPMQL
+- [ ] **Paid Ads:** Cek data yang beda dengan baseline Oktober, laporkan ke SPV  
+  *Selesai kalau:* Daftar selisih dan penjelasannya terkirim ke SPV · *KPI:* Akurasi data
+- [ ] **SMS:** Catat followers semua akun per 1 Nov sebagai angka awal  
+  *Selesai kalau:* Angka awal 5 akun tercatat · *KPI:* Followers
+- [ ] **SMS:** Ambil data durasi tonton dan violation Oktober; cek video TikTok yang dobel  
+  *Selesai kalau:* Data per akun tercatat, video dobel ketemu · *KPI:* Views, Violation
+- [ ] **SMS:** Susun jadwal konten sisa November (IG 5/minggu, unggulan di Kamis–Jumat); kirim brief Minggu 3 ke CC Rab 11 Nov  
+  *Selesai kalau:* Jadwal jadi dan brief Minggu 3 diterima CC Rab 11 Nov · *KPI:* Views, Followers
+- [ ] **SMS:** Samakan cara hitung "interaksi" dan sambungkan Facebook ke Dashboard KPI  
+  *Selesai kalau:* Definisi tertulis dan Facebook terhubung · *KPI:* Views, Akurasi data
+- [ ] **CC:** Tambah 3 kolom tanggal di Kanban: brief diterima, draf dikirim, tayang  
+  *Selesai kalau:* Kolom ada dan terisi sejak 9 Nov · *KPI:* Ketepatan brief
+- [ ] **SMS, CC:** Sepakati berapa konten TikTok yang dibuat khusus dan berapa yang adaptasi dari IG  
+  *Selesai kalau:* Jumlahnya disepakati dan dicatat · *KPI:* Views
+- [ ] **CC:** Kumpulkan hook dari konten IG terbaik sebagai acuan script  
+  *Selesai kalau:* Min. 10 contoh hook tercatat · *KPI:* Views
 - [ ] **CC:** Produksi konten slot bebas Minggu 2 sesuai brief SMS  
-  *Selesai kalau:* 1 konten slot bebas tayang di Minggu 2 · *KPI:* Followers, MQL
-- [ ] **Pihak lain:** Mas Dias: konfirmasi data cabang (nomor orang tua siswa) yang boleh dipakai untuk iklan, termasuk dasar persetujuan sesuai UU Pelindungan Data Pribadi  
-  *Selesai kalau:* Jawaban tertulis soal data yang boleh dipakai dan syaratnya · *KPI:* MQL (uji coba Desember)
-- [ ] **Pihak lain:** Mas Dwi: cek kemampuan WA Business biasa di cabang dan susun solusi tracking (CTWA click ID) yang tidak menambah banyak kerjaan cabang  
-  *Selesai kalau:* Usulan solusi tertulis beserta kebutuhan dari cabang · *KPI:* MQL (uji coba Desember)
+  *Selesai kalau:* 1 konten tayang di Minggu 2 · *KPI:* Followers, MQL
+- [ ] **Pihak lain:** Mas Dwi: cari cara tracking CTWA di WA Business cabang tanpa menambah kerja cabang  
+  *Selesai kalau:* Usulan tertulis · *KPI:* MQL (uji coba Desember)
+- [ ] **Paid Ads:** Capai target Minggu 2 (kumulatif per 15 Nov)  
+  *Selesai kalau:* MQL ≥ 16 · CPMQL ≤ Rp 375 rb · No Response ≤ 62% · BF ≥ 2 · CPBF ≤ Rp 2,5 jt · *KPI:* MQL, CPMQL, No Response, BF
+- [ ] **SMS:** Capai target organik Minggu 2 (per 15 Nov)  
+  *Selesai kalau:* Views kumulatif ≥ 50 rb · followers bersih ≥ +350 · *KPI:* Views, Followers
+- [ ] **CC:** Capai target produksi Minggu 2  
+  *Selesai kalau:* Tayang 1 Reels Isu Pendidikan + 2 Reels Edukasi + 1 konten slot bebas · *KPI:* Views
 
 ### Minggu 3–5
 To-do Minggu 3, 4, dan 5 disusun menyesuaikan hasil tiap minggu, menyusul setelah evaluasi mingguan.
