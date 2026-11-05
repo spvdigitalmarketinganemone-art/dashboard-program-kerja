@@ -133,11 +133,6 @@ table.pk-table{width:100%;border-collapse:collapse;font-size:var(--cds-font-size
         store[id] = {status: 'ok', data: await r.json()};
       } catch (e) { console.error('Gagal memuat ' + id, e); store[id] = {status: 'error', data: null}; }
     }));
-    try {
-      const m = await (await fetch('data/meta.json', {cache: 'no-store'})).json();
-      const d = new Date(m.updated_at);
-      document.getElementById('pk-updated').textContent = 'Data terakhir diperbarui ' + d.toLocaleString('id-ID', {dateStyle: 'long', timeStyle: 'short'}) + (m.updated_by ? ' oleh ' + m.updated_by : '') + (m.ringkasan ? ' · ' + m.ringkasan : '');
-    } catch (e) { document.getElementById('pk-updated').textContent = ''; }
     render();
   }
   window.dash = dash;
@@ -153,7 +148,6 @@ table.pk-table{width:100%;border-collapse:collapse;font-size:var(--cds-font-size
 <div class="pk">
   <header class="pk-head" id="ringkasan">
     <h1 class="pk-title">Program Kerja Digital Marketing — November 2026</h1>
-    <p class="pk-note" id="pk-updated">Memuat data…</p>
     <p class="pk-lead">CPMQL turun <b data-draw="lead_cpmql_delta" data-source="ringkasan_funnel" data-field="cpmql_sep_okt" data-row="0">—</b> dari September ke Oktober. Target November: <b data-draw="lead_target_cpmql" data-source="target_nov" data-field="target_cpmql" data-row="0">—</b> per MQL, <b data-draw="lead_target_mql" data-source="target_nov" data-field="target_mql" data-row="0">—</b> MQL, <b data-draw="lead_target_bf" data-source="target_nov" data-field="target_bf" data-row="0">—</b> Booking Fee, dan <b data-draw="lead_target_views" data-source="target_nov" data-field="target_views_bulan" data-row="0">—</b> views organik.</p>
   </header>
 
