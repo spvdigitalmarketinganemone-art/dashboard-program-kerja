@@ -55,12 +55,12 @@ Pembagian target per Paid Ads Specialist menyusul setelah porsi budget per orang
 
 | Akun | Posting/minggu | Rata-rata views/konten (diukur 7 hari setelah posting) | Views/minggu | Followers 30 Nov |
 |---|---|---|---|---|
-| IG Anemone Indonesia | 5 | ≥ 2.400 | ≥ 12.000 | ≥ 16.200 (+240) |
+| IG Anemone Indonesia | 5 | ≥ 2.400 | ≥ 12.000 | ≥ 16.311 (+350) |
 | TikTok | 7, min. 2 native | ≥ 570 | ≥ 4.000 | ≥ 4.030 (+190) |
 | YT Shorts | 6 (mirror) | ≥ 650 | ≥ 4.000 | ≥ 4.160 (+120) |
 | Life at Anemone | 1–2 | ≥ 2.000 | ≥ 3.000 | ≥ 2.605 (+40) |
 | Facebook | mirror | — | ≥ 600 | dipantau |
-| **Total** | | | **≥ 23.600** | **+590** |
+| **Total** | | | **≥ 23.600** | **+700** |
 
 **Checkpoint views sejak awal bulan:** 8 Nov ≥ 27 rb · 15 Nov ≥ 50 rb · 22 Nov ≥ 73 rb · 30 Nov ≥ 100 rb
 
