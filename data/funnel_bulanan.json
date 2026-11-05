@@ -1,0 +1,26 @@
+[
+ {
+  "bulan": "2026-09",
+  "label": "Sep 2026",
+  "periode": "s.d. 4 Okt",
+  "biaya": 17573188,
+  "leads": 427,
+  "no_response": 141,
+  "no_response_pct": 0.3302,
+  "mql": 19,
+  "cpmql": 924905,
+  "bf": 5
+ },
+ {
+  "bulan": "2026-10",
+  "label": "Okt 2026",
+  "periode": "5 Okt–1 Nov",
+  "biaya": 12597221,
+  "leads": 425,
+  "no_response": 265,
+  "no_response_pct": 0.6235,
+  "mql": 26,
+  "cpmql": 484509,
+  "bf": 3
+ }
+]

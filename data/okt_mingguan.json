@@ -1,0 +1,38 @@
+[
+ {
+  "minggu": "5–11 Okt",
+  "biaya_kum": 2453756,
+  "leads_kum": 184,
+  "no_response_kum": 81,
+  "no_response_pct": 0.4402,
+  "mql_kum": 7,
+  "cpmql_kum": 350537
+ },
+ {
+  "minggu": "12–18 Okt",
+  "biaya_kum": 7702684,
+  "leads_kum": 256,
+  "no_response_kum": 162,
+  "no_response_pct": 0.6328,
+  "mql_kum": 17,
+  "cpmql_kum": 453099
+ },
+ {
+  "minggu": "19–25 Okt",
+  "biaya_kum": 10642515,
+  "leads_kum": 338,
+  "no_response_kum": 210,
+  "no_response_pct": 0.6213,
+  "mql_kum": 22,
+  "cpmql_kum": 483751
+ },
+ {
+  "minggu": "26 Okt–1 Nov",
+  "biaya_kum": 12597221,
+  "leads_kum": 425,
+  "no_response_kum": 265,
+  "no_response_pct": 0.6235,
+  "mql_kum": 26,
+  "cpmql_kum": 484509
+ }
+]

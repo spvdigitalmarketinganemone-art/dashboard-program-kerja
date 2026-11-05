@@ -1,0 +1,11 @@
+[
+ {
+  "target_biaya": 15000000,
+  "target_mql": 39,
+  "target_cpmql": 385000,
+  "target_bf": 6,
+  "target_no_response_pct": 0.5,
+  "batas_tahan_spend": 420000,
+  "target_views_bulan": 100000
+ }
+]

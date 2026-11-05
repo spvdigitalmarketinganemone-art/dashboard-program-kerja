@@ -1,0 +1,47 @@
+[
+ {
+  "minggu": 1,
+  "periode": "2–8 Nov",
+  "target_biaya_kum": 3000000,
+  "target_mql_kum": 8,
+  "target_cpmql_kum": 375000,
+  "aktual_biaya_kum": null,
+  "aktual_mql_kum": null
+ },
+ {
+  "minggu": 2,
+  "periode": "9–15 Nov",
+  "target_biaya_kum": 6000000,
+  "target_mql_kum": 16,
+  "target_cpmql_kum": 375000,
+  "aktual_biaya_kum": null,
+  "aktual_mql_kum": null
+ },
+ {
+  "minggu": 3,
+  "periode": "16–22 Nov",
+  "target_biaya_kum": 9000000,
+  "target_mql_kum": 24,
+  "target_cpmql_kum": 375000,
+  "aktual_biaya_kum": null,
+  "aktual_mql_kum": null
+ },
+ {
+  "minggu": 4,
+  "periode": "23–29 Nov",
+  "target_biaya_kum": 12000000,
+  "target_mql_kum": 32,
+  "target_cpmql_kum": 375000,
+  "aktual_biaya_kum": null,
+  "aktual_mql_kum": null
+ },
+ {
+  "minggu": 5,
+  "periode": "30 Nov–6 Des",
+  "target_biaya_kum": 15000000,
+  "target_mql_kum": 39,
+  "target_cpmql_kum": 385000,
+  "aktual_biaya_kum": null,
+  "aktual_mql_kum": null
+ }
+]

@@ -1,0 +1,44 @@
+[
+ {
+  "bulan": "2026-09",
+  "label": "Sep 2026",
+  "biaya": 17573188,
+  "mql": 19,
+  "cpmql": 924905,
+  "bf": 5,
+  "no_response_pct": 0.3302,
+  "views_organik": null,
+  "target_mql": null,
+  "target_cpmql": null,
+  "target_bf": null,
+  "target_views": null
+ },
+ {
+  "bulan": "2026-10",
+  "label": "Okt 2026",
+  "biaya": 12597221,
+  "mql": 26,
+  "cpmql": 484509,
+  "bf": 3,
+  "no_response_pct": 0.6235,
+  "views_organik": 79769,
+  "target_mql": null,
+  "target_cpmql": null,
+  "target_bf": null,
+  "target_views": null
+ },
+ {
+  "bulan": "2026-11",
+  "label": "Nov 2026",
+  "biaya": null,
+  "mql": null,
+  "cpmql": null,
+  "bf": null,
+  "no_response_pct": null,
+  "views_organik": null,
+  "target_mql": 39,
+  "target_cpmql": 385000,
+  "target_bf": 6,
+  "target_views": 100000
+ }
+]

@@ -1,0 +1,876 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Program Kerja Digital Marketing Anemone — November 2026</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<style>
+:root{color-scheme:light;
+--color-bg:#f7f6f3;--color-panel:#ffffff;--color-fg:#1f1e1d;--color-fg-muted:#6b6a66;--color-border-line:#e4e2dc;--color-ok:#2e7d4f;--color-bad:#c0392b;
+--chart-1:#c96442;--chart-2:#3b6fb6;--cds-chart-grid:#ecebe7;--cds-chart-axis:#c9c7c0;--cds-chart-reference:#8a8880;--cds-chart-muted:#d6d3cb;
+--cds-surface-popover:#ffffff;--cds-border:#e4e2dc;--cds-shadow-popover:0 4px 16px rgba(0,0,0,.12);--cds-text-secondary:#6b6a66;
+--font-anthropic-sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--font-anthropic-serif:Georgia,"Times New Roman",serif;
+--cds-font-size-title:1.75rem;--cds-font-size-heading:1.0625rem;--cds-font-size-body:.9375rem;--cds-font-size-caption:.8125rem;--cds-font-weight-medium:600;
+--cds-gap-xs:.25rem;--cds-gap-sm:.5rem;--cds-gap-md:.75rem;--cds-gap-lg:1rem;--cds-gap-xl:1.5rem;
+--cds-pad-xs:.25rem;--cds-pad-sm:.5rem;--cds-pad-md:.75rem;--cds-pad-lg:1rem;--cds-pad-xl:1.5rem;--cds-radius:8px;--cds-dur-slow:.3s}
+@media (prefers-color-scheme: dark){:root{color-scheme:dark;
+--color-bg:#1a1a19;--color-panel:#242423;--color-fg:#ecebe7;--color-fg-muted:#a3a19b;--color-border-line:#3a3937;--color-ok:#5cb87f;--color-bad:#e2665a;
+--chart-1:#e08a6a;--chart-2:#6f9fe0;--cds-chart-grid:#2f2e2c;--cds-chart-axis:#4a4946;--cds-chart-reference:#8f8d87;--cds-chart-muted:#4a4844;
+--cds-surface-popover:#2a2a29;--cds-border:#3a3937;--cds-shadow-popover:0 4px 16px rgba(0,0,0,.5);--cds-text-secondary:#a3a19b}}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:var(--font-anthropic-sans);padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}
+.pk{max-width:1200px;margin:0 auto;padding:var(--cds-pad-xl) var(--cds-pad-lg)}
+.dash-skeleton{background:linear-gradient(90deg,var(--color-border-line) 0%,transparent 50%,var(--color-border-line) 100%);background-size:200% 100%;animation:pkshim 1.4s linear infinite;border-radius:var(--cds-radius);opacity:.5}
+@keyframes pkshim{from{background-position:200% 0}to{background-position:-200% 0}}
+
+.pk{font-family:var(--font-anthropic-sans);color:var(--color-fg);display:flex;flex-direction:column;gap:var(--cds-gap-lg)}
+.pk-head{display:flex;flex-direction:column;gap:var(--cds-gap-xs)}
+.pk-title{font-family:var(--font-anthropic-serif);font-weight:400;font-size:var(--cds-font-size-title);margin:0}
+.pk-lead{margin:0;color:var(--color-fg-muted);font-size:var(--cds-font-size-body)}
+.pk .pk-lead b,.pk .pk-note b{color:var(--color-fg);font-weight:var(--cds-font-weight-medium);font-variant-numeric:tabular-nums}
+.pk-tabs{display:flex;flex-wrap:wrap;gap:var(--cds-gap-xs);border-bottom:1px solid var(--color-border-line)}
+.pk-tab{appearance:none;background:none;border:0;border-bottom:2px solid transparent;padding:var(--cds-pad-sm) var(--cds-pad-md);font:inherit;font-size:var(--cds-font-size-body);color:var(--color-fg-muted);cursor:pointer}
+.pk-tab[aria-selected="true"]{color:var(--color-fg);border-bottom-color:var(--color-fg)}
+.pk-sec{display:flex;flex-direction:column;gap:var(--cds-gap-lg)}
+.pk-sec h2{margin:0;font-size:var(--cds-font-size-heading);font-weight:var(--cds-font-weight-medium)}
+.pk-tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,11rem),1fr));gap:var(--cds-gap-md)}
+.pk-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,22rem),1fr));gap:var(--cds-gap-md)}
+.pk-card{background:var(--color-panel);border:1px solid var(--color-border-line);border-radius:var(--cds-radius);padding:var(--cds-pad-lg);display:flex;flex-direction:column;gap:var(--cds-gap-sm);min-width:0}
+.pk-card h3{margin:0;font-size:var(--cds-font-size-heading);font-weight:var(--cds-font-weight-medium)}
+.pk-label{margin:0;font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
+.pk-note{margin:0;font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
+.pk-big{font-family:var(--font-anthropic-serif);font-weight:400;font-size:var(--cds-font-size-title);font-variant-numeric:tabular-nums;line-height:1.15}
+.pk-row{display:flex;align-items:baseline;gap:var(--cds-gap-xs);flex-wrap:wrap}
+.pk-delta{font-size:var(--cds-font-size-caption);font-variant-numeric:tabular-nums;color:var(--color-fg-muted)}
+.pk .pk-good{color:var(--color-ok)}
+.pk .pk-bad{color:var(--color-bad)}
+.pk-chart{position:relative;min-height:240px;width:100%}
+.pk-chart.pk-tall{min-height:300px}
+.pk-chart svg{display:block;overflow:visible}
+.pk-tick{font-size:var(--cds-font-size-caption);fill:var(--color-fg-muted);font-family:var(--font-anthropic-sans)}
+.pk-val{font-size:var(--cds-font-size-caption);fill:var(--color-fg);font-family:var(--font-anthropic-sans);font-variant-numeric:tabular-nums}
+.pk-tip{position:absolute;display:none;pointer-events:none;background:var(--cds-surface-popover);border:1px solid var(--cds-border);border-radius:var(--cds-radius);box-shadow:var(--cds-shadow-popover);padding:var(--cds-pad-xs) var(--cds-pad-sm);font-size:var(--cds-font-size-caption);white-space:nowrap;z-index:2}
+.pk-tip-h{color:var(--cds-text-secondary)}
+.pk-fail{display:flex;align-items:center;justify-content:center;gap:var(--cds-gap-xs);min-height:inherit;color:var(--color-fg-muted);font-size:var(--cds-font-size-caption)}
+.pk-fail::before{content:"";width:.375rem;height:.375rem;border-radius:50%;background:var(--color-bad)}
+.pk-toggle{display:flex;flex-wrap:wrap;gap:var(--cds-gap-xs);align-items:center}
+.pk-btn{font:inherit;font-size:var(--cds-font-size-caption);padding:var(--cds-pad-xs) var(--cds-pad-sm);border:1px solid var(--color-border-line);border-radius:var(--cds-radius);background:transparent;color:var(--color-fg-muted);cursor:pointer}
+.pk-btn[aria-pressed="true"]{color:var(--color-fg);border-color:var(--color-fg)}
+.pk-select{font:inherit;font-size:var(--cds-font-size-caption);padding:var(--cds-pad-xs) var(--cds-pad-sm);border:1px solid var(--color-border-line);border-radius:var(--cds-radius);background:var(--color-panel);color:var(--color-fg)}
+.pk-legend{display:flex;flex-wrap:wrap;gap:var(--cds-gap-md);font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
+.pk-sw{display:inline-block;width:.65rem;height:.65rem;border-radius:2px;margin-right:.35rem;vertical-align:-1px}
+.pk-scroll{overflow-x:auto}
+table.pk-table{width:100%;border-collapse:collapse;font-size:var(--cds-font-size-caption);font-variant-numeric:tabular-nums}
+.pk-table th,.pk-table td{padding:var(--cds-pad-xs) var(--cds-pad-sm);border-bottom:1px solid var(--color-border-line);text-align:left;vertical-align:top}
+.pk-table th{color:var(--color-fg-muted);font-weight:var(--cds-font-weight-medium)}
+.pk-table .num{text-align:right;white-space:nowrap}
+.pk-todo{max-height:32rem;overflow:auto}
+.pk-todo th{position:sticky;top:0;background:var(--color-panel)}
+.pk-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,11rem),1fr));gap:var(--cds-gap-md)}
+.pk-kpi{background:var(--color-panel);border:1px solid var(--color-border-line);border-radius:var(--cds-radius);padding:var(--cds-pad-md) var(--cds-pad-lg);display:flex;flex-direction:column;gap:var(--cds-gap-xs);min-width:0}
+.pk-kpi .pk-big{font-size:var(--cds-font-size-heading)}
+.pk-kpi .pk-wait{font-family:var(--font-anthropic-sans);font-size:var(--cds-font-size-body);color:var(--color-fg-muted)}
+.pk-bar{height:6px;border-radius:3px;background:var(--color-border-line);overflow:hidden}
+.pk-bar>i{display:block;height:100%;border-radius:3px}
+.pk-chip{display:inline-block;align-self:flex-start;padding:1px var(--cds-pad-xs);border-radius:var(--cds-radius);border:1px solid var(--color-border-line);font-size:var(--cds-font-size-caption);white-space:nowrap;color:var(--color-fg-muted)}
+.pk .pk-chip.pk-good{color:var(--color-ok);border-color:currentColor}
+.pk .pk-chip.pk-bad{color:var(--color-bad);border-color:currentColor}
+.pk .pk-chip.pk-mid{color:var(--color-fg);border-color:var(--color-fg)}
+.pk-todo table{min-width:1180px}
+.pk-todo td.pk-w-lg{min-width:15rem}
+.pk-todo td.pk-w-md{min-width:12rem}
+.pk-sub{display:block;color:var(--color-fg-muted)}
+.pk [data-dash-source-state=empty]{color:transparent}
+.pk [data-dash-source-state=refreshing]{opacity:.5;transition:opacity var(--cds-dur-slow)}
+</style>
+<script>
+/* Pengganti runtime dashboard claude.ai: memuat data/*.json dari repo ini lalu menggambar ulang halaman. */
+(function () {
+  const DATASETS = ['funnel_bulanan', 'okt_mingguan', 'target_nov', 'pacing_nov', 'creative_meta_okt', 'organik_akun', 'views_checkpoint', 'todo_nov', 'rekap_bulanan', 'kpi_mingguan'];
+  const store = {};
+  DATASETS.forEach((id) => { store[id] = {status: 'loading', data: null}; });
+  const calcs = {}, draws = {}, onDatas = [];
+  const params = {pacing: 'mql', tipe: 'CTWA', minggu: 'semua', pic: 'semua', jenis: 'semua'};
+  const css = (n) => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+  const dash = {
+    colors: [],
+    data(id) { if (store[id]) return store[id]; if (calcs[id]) return calcs[id].result; return {status: 'missing', data: null}; },
+    calc(id, def) { calcs[id] = {def, result: {status: 'loading', data: null}}; },
+    draw(name, fn) { draws[name] = fn; },
+    params() { return Object.assign({}, params); },
+    setParams(p) { Object.assign(params, p); render(); },
+    onData(fn) { onDatas.push(fn); },
+    setLink(name) { history.replaceState(null, '', '#' + name); render(); },
+  };
+  function runCalcs() {
+    Object.entries(calcs).forEach(([, c]) => {
+      const ins = c.def.inputs.map((i) => dash.data(i));
+      if (ins.some((d) => d.status === 'error')) c.result = {status: 'error', data: null};
+      else if (ins.every((d) => d.status === 'ok')) {
+        try { c.result = {status: 'ok', data: c.def.fn(...ins.map((d) => d.data))}; } catch (e) { console.error(e); c.result = {status: 'error', data: null}; }
+      }
+    });
+  }
+  function render() {
+    dash.colors = [css('--chart-1'), css('--chart-2')];
+    runCalcs();
+    onDatas.forEach((f) => { try { f(); } catch (e) { console.error(e); } });
+    document.querySelectorAll('[data-draw]').forEach((el) => {
+      const fn = draws[el.dataset.draw];
+      if (fn && !el.closest('[hidden]')) { try { fn(el); } catch (e) { console.error(el.dataset.draw, e); } }
+    });
+  }
+  async function load() {
+    await Promise.all(DATASETS.map(async (id) => {
+      try {
+        const r = await fetch('data/' + id + '.json', {cache: 'no-store'});
+        if (!r.ok) throw new Error(r.status);
+        store[id] = {status: 'ok', data: await r.json()};
+      } catch (e) { console.error('Gagal memuat ' + id, e); store[id] = {status: 'error', data: null}; }
+    }));
+    try {
+      const m = await (await fetch('data/meta.json', {cache: 'no-store'})).json();
+      const d = new Date(m.updated_at);
+      document.getElementById('pk-updated').textContent = 'Data terakhir diperbarui ' + d.toLocaleString('id-ID', {dateStyle: 'long', timeStyle: 'short'}) + (m.updated_by ? ' oleh ' + m.updated_by : '') + (m.ringkasan ? ' · ' + m.ringkasan : '');
+    } catch (e) { document.getElementById('pk-updated').textContent = ''; }
+    render();
+  }
+  window.dash = dash;
+  document.addEventListener('DOMContentLoaded', () => { render(); load(); });
+  let t;
+  window.addEventListener('resize', () => { clearTimeout(t); t = setTimeout(render, 150); });
+})();
+</script>
+</head>
+<body>
+
+
+<div class="pk">
+  <header class="pk-head" id="ringkasan">
+    <h1 class="pk-title">Program Kerja Digital Marketing — November 2026</h1>
+    <p class="pk-note" id="pk-updated">Memuat data…</p>
+    <p class="pk-lead">CPMQL turun <b data-draw="lead_cpmql_delta" data-source="ringkasan_funnel" data-field="cpmql_sep_okt" data-row="0">—</b> dari September ke Oktober. Target November: <b data-draw="lead_target_cpmql" data-source="target_nov" data-field="target_cpmql" data-row="0">—</b> per MQL, <b data-draw="lead_target_mql" data-source="target_nov" data-field="target_mql" data-row="0">—</b> MQL, <b data-draw="lead_target_bf" data-source="target_nov" data-field="target_bf" data-row="0">—</b> Booking Fee, dan <b data-draw="lead_target_views" data-source="target_nov" data-field="target_views_bulan" data-row="0">—</b> views organik.</p>
+  </header>
+
+  <nav class="pk-tabs" role="tablist" aria-label="Halaman">
+    <button class="pk-tab" id="tab-mingguan" role="tab" data-tab="mingguan" aria-selected="true">Target & to-do mingguan</button>
+    <button class="pk-tab" id="tab-paid" role="tab" data-tab="paid" aria-selected="false">Funnel A (Paid Ads)</button>
+    <button class="pk-tab" id="tab-organik" role="tab" data-tab="organik" aria-selected="false">Organik (SMS)</button>
+    <button class="pk-tab" id="tab-rekap" role="tab" data-tab="rekap" aria-selected="false">Rekap bulanan</button>
+  </nav>
+
+  <section class="pk-sec" id="paid" data-page="paid" hidden>
+    <div class="pk-tiles">
+      <div class="pk-card" id="tile-cpmql-okt">
+        <p class="pk-label">CPMQL Oktober</p>
+        <span class="pk-big" data-draw="cpmql_okt" data-source="funnel_bulanan" data-field="cpmql" data-where="bulan=2026-10">—</span>
+        <span class="pk-delta"><span data-draw="cpmql_delta_sep" data-source="ringkasan_funnel" data-field="cpmql_sep_okt" data-row="0">—</span> vs September</span>
+        <p class="pk-note">Periode <span data-draw="periode_okt" data-source="funnel_bulanan" data-field="periode" data-where="bulan=2026-10">—</span>, termasuk PPN</p>
+      </div>
+      <div class="pk-card" id="tile-cpmql-target">
+        <p class="pk-label">Target CPMQL November</p>
+        <span class="pk-big" data-draw="cpmql_target" data-source="target_nov" data-field="target_cpmql" data-row="0">—</span>
+        <span class="pk-delta"><span data-draw="cpmql_delta_target" data-source="ringkasan_funnel" data-field="cpmql_okt_target" data-row="0">—</span> vs Oktober</span>
+        <p class="pk-note">Batas aman sebelum tahan spend: <b data-draw="batas_spend_cpmql" data-source="target_nov" data-field="batas_tahan_spend" data-row="0">—</b></p>
+      </div>
+      <div class="pk-card" id="tile-mql">
+        <p class="pk-label">MQL: Oktober → target November</p>
+        <div class="pk-row"><span class="pk-big" data-draw="mql_okt" data-source="funnel_bulanan" data-field="mql" data-where="bulan=2026-10">—</span><span class="pk-delta">→</span><span class="pk-big" data-draw="mql_target" data-source="target_nov" data-field="target_mql" data-row="0">—</span></div>
+        <span class="pk-delta"><span data-draw="mql_delta" data-source="ringkasan_funnel" data-field="mql_okt_target" data-row="0">—</span> dibutuhkan</span>
+      </div>
+      <div class="pk-card" id="tile-bf">
+        <p class="pk-label">Booking Fee: Oktober → target November</p>
+        <div class="pk-row"><span class="pk-big" data-draw="bf_okt" data-source="funnel_bulanan" data-field="bf" data-where="bulan=2026-10">—</span><span class="pk-delta">→</span><span class="pk-big" data-draw="bf_target" data-source="target_nov" data-field="target_bf" data-row="0">—</span></div>
+        <span class="pk-delta"><span data-draw="bf_delta" data-source="ringkasan_funnel" data-field="bf_okt_target" data-row="0">—</span> dibutuhkan</span>
+      </div>
+      <div class="pk-card" id="tile-nr">
+        <p class="pk-label">No Response Oktober</p>
+        <span class="pk-big" data-draw="nr_okt" data-source="funnel_bulanan" data-field="no_response_pct" data-where="bulan=2026-10">—</span>
+        <span class="pk-delta">Target ≤ <span data-draw="nr_target" data-source="target_nov" data-field="target_no_response_pct" data-row="0">—</span> (bersama sales)</span>
+      </div>
+    </div>
+
+    <div class="pk-grid">
+      <div class="pk-card" id="card-cpmql-okt">
+        <h3>CPMQL kumulatif Oktober per minggu</h3>
+        <p class="pk-note">CPMQL murah di minggu pertama, lalu naik setelah iklan CTWA hard selling jalan. Garis putus-putus = target November.</p>
+        <div class="pk-chart" id="chart-cpmql-okt" data-draw="chart_cpmql_okt" data-source="okt_mingguan target_nov"></div>
+      </div>
+      <div class="pk-card" id="card-nr-okt">
+        <h3>No Response kumulatif Oktober</h3>
+        <p class="pk-note">Persentase lead yang tidak merespons. Garis putus-putus = target November.</p>
+        <div class="pk-chart" id="chart-nr-okt" data-draw="chart_nr_okt" data-source="okt_mingguan target_nov"></div>
+      </div>
+    </div>
+
+    <div class="pk-grid">
+      <div class="pk-card" id="card-pacing">
+        <h3>Pacing November (kumulatif)</h3>
+        <p class="pk-note">Batang = target kumulatif per minggu. Titik aktual muncul setelah data mingguan diisi tiap Jumat.</p>
+        <div class="pk-toggle" aria-label="Metrik pacing">
+          <button class="pk-btn" data-pacing="mql" aria-pressed="true">MQL</button>
+          <button class="pk-btn" data-pacing="biaya" aria-pressed="false">Biaya (incl. PPN)</button>
+        </div>
+        <div class="pk-chart" id="chart-pacing" data-draw="chart_pacing" data-source="pacing_nov"></div>
+      </div>
+      <div class="pk-card" id="card-creative">
+        <h3>Creative Meta Oktober: biaya per lead</h3>
+        <p class="pk-note">Hanya iklan dengan spend ≥ <b data-draw="batas_spend_creative">—</b>. CTWA dihitung per chat, LPWA per Website Contact. Biaya per lead belum tentu sama dengan biaya per MQL.</p>
+        <div class="pk-toggle" aria-label="Tipe iklan">
+          <button class="pk-btn" data-tipe="CTWA" aria-pressed="true">CTWA</button>
+          <button class="pk-btn" data-tipe="LPWA" aria-pressed="false">LPWA</button>
+        </div>
+        <div class="pk-chart" id="chart-creative" data-draw="chart_creative" data-source="creative_meta_okt"></div>
+      </div>
+    </div>
+
+    <div class="pk-card" id="card-pacing-table">
+      <h3>Tabel pacing mingguan</h3>
+      <p class="pk-note">Periode Senin–Minggu, mengikuti sheet benchmark. Kolom aktual diisi tiap Jumat.</p>
+      <div class="pk-scroll">
+        <table class="pk-table" data-source="pacing_nov" data-row-key="minggu">
+          <thead><tr>
+            <th data-field="minggu">Minggu</th>
+            <th data-field="periode">Periode</th>
+            <th class="num" data-field="target_biaya_kum">Target biaya kum.</th>
+            <th class="num" data-field="target_mql_kum">Target MQL kum.</th>
+            <th class="num" data-field="target_cpmql_kum">Target CPMQL kum.</th>
+            <th class="num" data-field="aktual_biaya_kum">Aktual biaya kum.</th>
+            <th class="num" data-field="aktual_mql_kum">Aktual MQL kum.</th>
+          </tr></thead>
+          <tbody data-draw="table_pacing"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="pk-sec" id="organik" data-page="organik" hidden>
+    <p class="pk-note">Periode organik: 1–30 Nov (bulan kalender, mengikuti Dashboard KPI). Baseline per minggu adalah estimasi dari angka Oktober dan dikalibrasi sekali di akhir minggu 2.</p>
+    <div class="pk-tiles">
+      <div class="pk-card" id="tile-views-okt">
+        <p class="pk-label">Views organik Oktober (5 akun)</p>
+        <span class="pk-big" data-draw="views_okt" data-source="ringkasan_organik" data-field="views_okt" data-row="0">—</span>
+      </div>
+      <div class="pk-card" id="tile-views-target">
+        <p class="pk-label">KPI views November</p>
+        <span class="pk-big" data-draw="views_target" data-source="target_nov" data-field="target_views_bulan" data-row="0">—</span>
+        <span class="pk-delta"><span data-draw="views_naik" data-source="ringkasan_organik" data-field="kenaikan_views" data-row="0">—</span> dari Oktober</span>
+      </div>
+      <div class="pk-card" id="tile-views-minggu">
+        <p class="pk-label">Target views per minggu</p>
+        <span class="pk-big" data-draw="views_minggu" data-source="ringkasan_organik" data-field="target_views_minggu" data-row="0">—</span>
+      </div>
+      <div class="pk-card" id="tile-followers">
+        <p class="pk-label">Target tambahan followers</p>
+        <span class="pk-big" data-draw="followers_tambah_total" data-source="ringkasan_organik" data-field="tambah_followers" data-row="0">—</span>
+        <span class="pk-delta">Pertumbuhan bersih, 4 akun</span>
+      </div>
+    </div>
+
+    <div class="pk-grid">
+      <div class="pk-card" id="card-views-akun">
+        <h3>Views per minggu: baseline vs target</h3>
+        <div class="pk-legend"><span><i class="pk-sw" data-sw="muted"></i>Baseline Oktober</span><span><i class="pk-sw" data-sw="0"></i>Target November</span></div>
+        <div class="pk-chart pk-tall" id="chart-views-akun" data-draw="chart_views_akun" data-source="organik_akun"></div>
+      </div>
+      <div class="pk-card" id="card-checkpoint">
+        <h3>Checkpoint views kumulatif (MTD)</h3>
+        <p class="pk-note">Batang = target kumulatif. Titik aktual muncul setelah diisi.</p>
+        <div class="pk-chart" id="chart-checkpoint" data-draw="chart_checkpoint" data-source="views_checkpoint"></div>
+      </div>
+    </div>
+
+    <div class="pk-card" id="card-organik-table">
+      <h3>Target per akun</h3>
+      <p class="pk-note">Rata-rata views diukur di hari ke-7 setelah posting. Konten duplikat dihitung 1 posting. Ada violation = status minggu itu ⚠️.</p>
+      <div class="pk-scroll">
+        <table class="pk-table" data-source="organik_akun" data-row-key="akun">
+          <thead><tr>
+            <th data-field="akun">Akun</th>
+            <th class="num" data-field="views_okt">Views Okt</th>
+            <th data-field="target_posting_minggu">Posting/minggu</th>
+            <th class="num" data-field="target_avg_views">Rata-rata views/konten</th>
+            <th class="num" data-field="target_views_minggu">Target views/minggu</th>
+            <th class="num" data-field="followers_awal">Followers awal</th>
+            <th class="num" data-field="target_followers">Target 30 Nov</th>
+            <th class="num" data-source="followers_tambah" data-field="tambah">Tambahan</th>
+          </tr></thead>
+          <tbody data-draw="table_organik"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="pk-sec" id="mingguan" data-page="mingguan">
+    <div class="pk-toggle" aria-label="Minggu">
+      <button class="pk-btn" data-minggu="semua" aria-pressed="true">Minggu berjalan + semua to-do</button>
+      <button class="pk-btn" data-minggu="Rutin" aria-pressed="false">Rutin</button>
+      <button class="pk-btn" data-minggu="1" aria-pressed="false">Minggu 1 (5–7 Nov)</button>
+      <button class="pk-btn" data-minggu="2" aria-pressed="false">Minggu 2 (9–14 Nov)</button>
+      <button class="pk-btn" data-minggu="3" aria-pressed="false">Minggu 3 (16–21 Nov)</button>
+      <button class="pk-btn" data-minggu="4" aria-pressed="false">Minggu 4 (23–28 Nov)</button>
+      <button class="pk-btn" data-minggu="5" aria-pressed="false">Minggu 5 (30 Nov–5 Des)</button>
+    </div>
+
+    <div class="pk-card" id="card-kpi-minggu">
+      <h3>Target hasil minggu ini: <span data-draw="kpi_week_label" data-source="kpi_mingguan">—</span></h3>
+      <p class="pk-note">Angka kumulatif sejak awal periode. Aktual diisi tiap Jumat dari laporan tim. Periode data Senin–Minggu, mengikuti sheet benchmark.</p>
+      <div class="pk-kpis" id="kpi-cards" data-draw="kpi_cards" data-source="kpi_mingguan"></div>
+    </div>
+
+    <div class="pk-grid">
+      <div class="pk-card" id="card-progres">
+        <h3>Progres to-do per minggu</h3>
+        <p class="pk-note">Persentase to-do berstatus Selesai. Arahkan kursor untuk melihat jumlah yang masih proses atau terhambat.</p>
+        <div class="pk-chart" id="chart-progres" data-draw="chart_progres" data-source="progres_todo"></div>
+      </div>
+      <div class="pk-card" id="card-jenis">
+        <h3>Cara membaca to-do</h3>
+        <p class="pk-note"><b>Langsung</b>: dampaknya terlihat di KPI minggu itu atau minggu depannya.</p>
+        <p class="pk-note"><b>Fondasi</b>: diukur dari selesai dan dipakai; dampaknya ke KPI baru terlihat 1–3 minggu kemudian.</p>
+        <p class="pk-note"><b>Pemantauan</b>: diukur dari konsisten dikerjakan.</p>
+        <p class="pk-note">Kolom "Mendukung KPI" menunjukkan target yang didorong to-do tersebut. Kenaikan KPI biasanya hasil gabungan beberapa to-do, bukan satu to-do saja.</p>
+      </div>
+    </div>
+
+    <div class="pk-card" id="card-todo">
+      <h3>To-do, target, dan hasil</h3>
+      <div class="pk-toggle">
+        <select class="pk-select pk-pic" aria-label="PIC">
+          <option value="semua">Semua PIC</option>
+          <option value="SPV">SPV</option>
+          <option value="Paid Ads">Paid Ads</option>
+          <option value="SMS">SMS</option>
+          <option value="CC">CC</option>
+        </select>
+        <select class="pk-select pk-jenis" aria-label="Jenis">
+          <option value="semua">Semua jenis</option>
+          <option value="Langsung">Langsung</option>
+          <option value="Fondasi">Fondasi</option>
+          <option value="Pemantauan">Pemantauan</option>
+        </select>
+      </div>
+      <div class="pk-todo pk-scroll">
+        <table class="pk-table" data-source="todo_nov" data-row-key="id">
+          <thead><tr>
+            <th data-field="minggu">Minggu</th>
+            <th data-field="pic">PIC</th>
+            <th data-field="jenis">Jenis</th>
+            <th data-field="todo">To-do</th>
+            <th data-field="selesai_kalau">Selesai kalau</th>
+            <th data-field="kpi">Mendukung KPI</th>
+            <th data-field="dampak">Dampak yang diharapkan</th>
+            <th data-field="status">Status</th>
+            <th data-field="hasil_aktual">Hasil aktual</th>
+            <th data-field="catatan">Catatan</th>
+          </tr></thead>
+          <tbody data-draw="table_todo"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="pk-sec" id="rekap" data-page="rekap" hidden>
+    <p class="pk-note">Satu baris per bulan untuk melacak target vs realisasi dari bulan ke bulan. Bulan berjalan menampilkan target dulu; realisasinya diisi saat tutup bulan. Bulan tanpa target tercatat dibiarkan kosong.</p>
+    <div class="pk-grid">
+      <div class="pk-card" id="card-rekap-cpmql">
+        <h3>CPMQL per bulan</h3>
+        <div class="pk-legend"><span><i class="pk-sw" data-sw="0"></i>Realisasi</span><span><i class="pk-sw" data-sw="1"></i>Target</span></div>
+        <div class="pk-chart" id="chart-rekap-cpmql" data-draw="chart_rekap_cpmql" data-source="rekap_bulanan"></div>
+      </div>
+      <div class="pk-card" id="card-rekap-mql">
+        <h3>MQL per bulan</h3>
+        <div class="pk-legend"><span><i class="pk-sw" data-sw="0"></i>Realisasi</span><span><i class="pk-sw" data-sw="1"></i>Target</span></div>
+        <div class="pk-chart" id="chart-rekap-mql" data-draw="chart_rekap_mql" data-source="rekap_bulanan"></div>
+      </div>
+    </div>
+    <div class="pk-card" id="card-rekap-table">
+      <h3>Target vs realisasi per bulan</h3>
+      <p class="pk-note">Funnel A memakai periode sheet CPMQL (biaya termasuk PPN); views organik memakai bulan kalender.</p>
+      <div class="pk-scroll">
+        <table class="pk-table" data-source="rekap_bulanan" data-row-key="bulan">
+          <thead><tr>
+            <th data-field="label">Bulan</th>
+            <th class="num" data-field="biaya">Biaya</th>
+            <th class="num" data-field="mql">MQL</th>
+            <th class="num" data-field="target_mql">Target MQL</th>
+            <th class="num" data-field="cpmql">CPMQL</th>
+            <th class="num" data-field="target_cpmql">Target CPMQL</th>
+            <th class="num" data-field="bf">BF</th>
+            <th class="num" data-field="target_bf">Target BF</th>
+            <th class="num" data-field="no_response_pct">No Response</th>
+            <th class="num" data-field="views_organik">Views organik</th>
+            <th class="num" data-field="target_views">Target views</th>
+          </tr></thead>
+          <tbody data-draw="table_rekap"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script>
+const BATAS_SPEND_CREATIVE = 300000;
+const nf = new Intl.NumberFormat('id-ID');
+const isNum = (v) => v != null && isFinite(v);
+const rp = (v) => isNum(v) ? 'Rp ' + nf.format(Math.round(v)) : '—';
+const num = (v) => isNum(v) ? nf.format(v) : '—';
+const pct = (v) => isNum(v) ? (v * 100).toLocaleString('id-ID', {maximumFractionDigits: 2}) + '%' : '—';
+const signed = (v) => isNum(v) ? (v > 0 ? '+' : v < 0 ? '−' : '') + (Math.abs(v) * 100).toLocaleString('id-ID', {maximumFractionDigits: 0}) + '%' : '—';
+const rpShort = (v) => !isNum(v) ? '—' : v >= 1e6 ? 'Rp ' + (v / 1e6).toLocaleString('id-ID', {maximumFractionDigits: 1}) + ' jt' : v >= 1e3 ? 'Rp ' + Math.round(v / 1e3) + ' rb' : 'Rp ' + Math.round(v);
+const cssVar = (n) => getComputedStyle(document.documentElement).getPropertyValue(n).trim() || 'currentColor';
+
+dash.calc('ringkasan_funnel', {
+  inputs: ['funnel_bulanan', 'target_nov'],
+  title: 'Perubahan Funnel A',
+  description: 'Perubahan September ke Oktober, dan Oktober ke target November.',
+  fn: (funnel_bulanan, target_nov) => {
+    const sep = funnel_bulanan.find((r) => r.bulan === '2026-09');
+    const okt = funnel_bulanan.find((r) => r.bulan === '2026-10');
+    const t = target_nov[0];
+    return [{
+      cpmql_sep_okt: (okt.cpmql - sep.cpmql) / sep.cpmql,
+      cpmql_okt_target: (t.target_cpmql - okt.cpmql) / okt.cpmql,
+      mql_okt_target: (t.target_mql - okt.mql) / okt.mql,
+      bf_okt_target: (t.target_bf - okt.bf) / okt.bf,
+    }];
+  },
+});
+dash.calc('ringkasan_organik', {
+  inputs: ['organik_akun', 'target_nov'],
+  title: 'Total organik',
+  description: 'Total views Oktober, target views per minggu, tambahan followers, dan kenaikan views yang dibutuhkan.',
+  fn: (organik_akun, target_nov) => {
+    const views_okt = d3.sum(organik_akun, (r) => r.views_okt);
+    return [{
+      views_okt,
+      target_views_minggu: d3.sum(organik_akun, (r) => r.target_views_minggu),
+      tambah_followers: d3.sum(organik_akun, (r) => r.target_followers == null ? 0 : r.target_followers - r.followers_awal),
+      kenaikan_views: (target_nov[0].target_views_bulan - views_okt) / views_okt,
+    }];
+  },
+});
+dash.calc('followers_tambah', {
+  inputs: ['organik_akun'],
+  title: 'Tambahan followers per akun',
+  description: 'Target followers 30 Nov dikurangi followers awal.',
+  fn: (organik_akun) => organik_akun.map((r) => ({akun: r.akun, tambah: r.target_followers == null ? null : r.target_followers - r.followers_awal})),
+});
+
+dash.calc('progres_todo', {
+  inputs: ['todo_nov'],
+  title: 'Progres to-do per minggu',
+  description: 'Jumlah to-do per minggu menurut status, dan persentase yang sudah selesai.',
+  fn: (todo_nov) => ['Rutin', '1', '2', '3', '4', '5'].map((m) => {
+    const rows = todo_nov.filter((r) => r.minggu === m);
+    const c = (st) => rows.filter((r) => r.status === st).length;
+    return {minggu: m, label: m === 'Rutin' ? 'Rutin' : 'Minggu ' + m, total: rows.length, selesai: c('Selesai'), proses: c('Proses'), terhambat: c('Terhambat'), belum: c('Belum'), pct_selesai: rows.length ? c('Selesai') / rows.length : 0};
+  }),
+});
+
+/* ---------- helpers ---------- */
+const get = (id) => dash.data(id);
+const okAll = (ids) => ids.every((id) => get(id).status === 'ok');
+const failed = (ids) => ids.some((id) => ['error', 'connect', 'missing', 'declined'].includes(get(id).status));
+function chartReady(el, ids) {
+  if (okAll(ids)) { el.classList.remove('dash-skeleton'); return true; }
+  el.replaceChildren();
+  if (failed(ids)) {
+    el.classList.remove('dash-skeleton');
+    const f = document.createElement('div');
+    f.className = 'pk-fail';
+    f.textContent = 'Failed to load';
+    el.appendChild(f);
+  } else el.classList.add('dash-skeleton');
+  return false;
+}
+function textDraw(name, ids, fn, tone) {
+  dash.draw(name, (el) => {
+    if (!okAll(ids)) { el.textContent = '—'; el.classList.remove('pk-good', 'pk-bad'); return; }
+    const v = fn();
+    el.textContent = v.text;
+    el.classList.toggle('pk-good', tone === 'down' ? v.raw < 0 : tone === 'up' ? v.raw > 0 : false);
+    el.classList.toggle('pk-bad', tone === 'down' ? v.raw > 0 : tone === 'up' ? v.raw < 0 : false);
+  });
+}
+const row = (id, key, val) => get(id).data.find((r) => r[key] === val);
+const first = (id) => get(id).data[0];
+function measure(svg, texts, cls) {
+  let w = 0;
+  const g = svg.append('g');
+  texts.forEach((t) => { const n = g.append('text').attr('class', cls).text(t); w = Math.max(w, n.node().getComputedTextLength()); });
+  g.remove();
+  return w;
+}
+function makeTip(el) { const t = document.createElement('div'); t.className = 'pk-tip'; el.appendChild(t); return t; }
+function showTip(tip, el, x, y, head, lines) {
+  tip.replaceChildren();
+  const h = document.createElement('div'); h.className = 'pk-tip-h'; h.textContent = head; tip.appendChild(h);
+  lines.forEach((l) => { const d = document.createElement('div'); d.textContent = l; tip.appendChild(d); });
+  tip.style.display = 'block';
+  const w = el.clientWidth, tw = tip.offsetWidth, th = tip.offsetHeight;
+  tip.style.left = Math.max(0, Math.min(x + 12, w - tw)) + 'px';
+  tip.style.top = Math.max(0, y - th - 10) + 'px';
+}
+const hideTip = (tip) => { tip.style.display = 'none'; };
+
+/* ---------- header & tiles ---------- */
+textDraw('lead_cpmql_delta', ['ringkasan_funnel'], () => { const v = first('ringkasan_funnel').cpmql_sep_okt; return {text: signed(v), raw: v}; });
+textDraw('lead_target_cpmql', ['target_nov'], () => ({text: rp(first('target_nov').target_cpmql)}));
+textDraw('lead_target_mql', ['target_nov'], () => ({text: num(first('target_nov').target_mql)}));
+textDraw('lead_target_bf', ['target_nov'], () => ({text: num(first('target_nov').target_bf)}));
+textDraw('lead_target_views', ['target_nov'], () => ({text: num(first('target_nov').target_views_bulan)}));
+
+textDraw('cpmql_okt', ['funnel_bulanan'], () => ({text: rp(row('funnel_bulanan', 'bulan', '2026-10').cpmql)}));
+textDraw('periode_okt', ['funnel_bulanan'], () => ({text: row('funnel_bulanan', 'bulan', '2026-10').periode}));
+textDraw('cpmql_delta_sep', ['ringkasan_funnel'], () => { const v = first('ringkasan_funnel').cpmql_sep_okt; return {text: signed(v), raw: v}; }, 'down');
+textDraw('cpmql_target', ['target_nov'], () => ({text: rp(first('target_nov').target_cpmql)}));
+textDraw('cpmql_delta_target', ['ringkasan_funnel'], () => { const v = first('ringkasan_funnel').cpmql_okt_target; return {text: signed(v), raw: v}; }, 'down');
+textDraw('batas_spend_cpmql', ['target_nov'], () => ({text: rp(first('target_nov').batas_tahan_spend)}));
+textDraw('mql_okt', ['funnel_bulanan'], () => ({text: num(row('funnel_bulanan', 'bulan', '2026-10').mql)}));
+textDraw('mql_target', ['target_nov'], () => ({text: num(first('target_nov').target_mql)}));
+textDraw('mql_delta', ['ringkasan_funnel'], () => { const v = first('ringkasan_funnel').mql_okt_target; return {text: signed(v), raw: v}; });
+textDraw('bf_okt', ['funnel_bulanan'], () => ({text: num(row('funnel_bulanan', 'bulan', '2026-10').bf)}));
+textDraw('bf_target', ['target_nov'], () => ({text: num(first('target_nov').target_bf)}));
+textDraw('bf_delta', ['ringkasan_funnel'], () => { const v = first('ringkasan_funnel').bf_okt_target; return {text: signed(v), raw: v}; });
+textDraw('nr_okt', ['funnel_bulanan'], () => ({text: pct(row('funnel_bulanan', 'bulan', '2026-10').no_response_pct)}));
+textDraw('nr_target', ['target_nov'], () => ({text: pct(first('target_nov').target_no_response_pct)}));
+dash.draw('batas_spend_creative', (el) => { el.textContent = rp(BATAS_SPEND_CREATIVE); });
+
+textDraw('views_okt', ['ringkasan_organik'], () => ({text: num(first('ringkasan_organik').views_okt)}));
+textDraw('views_target', ['target_nov'], () => ({text: num(first('target_nov').target_views_bulan)}));
+textDraw('views_naik', ['ringkasan_organik'], () => { const v = first('ringkasan_organik').kenaikan_views; return {text: signed(v), raw: v}; });
+textDraw('views_minggu', ['ringkasan_organik'], () => ({text: num(first('ringkasan_organik').target_views_minggu)}));
+textDraw('followers_tambah_total', ['ringkasan_organik'], () => { const v = first('ringkasan_organik').tambah_followers; return {text: '+' + num(v)}; });
+
+/* ---------- weekly KPI ---------- */
+const KPI_DEF = [
+  {label: 'MQL kumulatif', t: 'target_mql_kum', a: 'aktual_mql_kum', fmt: (v) => num(v), up: true},
+  {label: 'CPMQL kumulatif', t: 'target_cpmql_kum', a: 'aktual_cpmql_kum', fmt: (v) => rp(v), up: false},
+  {label: 'No Response', t: 'target_nr_pct', a: 'aktual_nr_pct', fmt: (v) => pct(v), up: false},
+  {label: 'Views organik kumulatif', t: 'target_views_kum', a: 'aktual_views_kum', fmt: (v) => num(v), up: true},
+  {label: 'Followers bersih (4 akun)', t: 'target_followers', a: 'aktual_followers', fmt: (v) => isNum(v) ? '+' + num(v) : '—', up: true},
+];
+function pickWeek(rows) {
+  const n = Number(dash.params().minggu);
+  if (n >= 1 && n <= 5) return rows.find((r) => r.minggu === n);
+  const d = new Date();
+  const today = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+  return rows.find((r) => today >= r.mulai && today <= r.selesai) || (today < rows[0].mulai ? rows[0] : rows[rows.length - 1]);
+}
+dash.draw('kpi_week_label', (el) => {
+  if (!okAll(['kpi_mingguan'])) { el.textContent = '—'; return; }
+  const w = pickWeek(get('kpi_mingguan').data);
+  el.textContent = 'Minggu ' + w.minggu + ' (' + w.periode + ')';
+});
+dash.draw('kpi_cards', (el) => {
+  if (!chartReady(el, ['kpi_mingguan'])) return;
+  el.replaceChildren();
+  const w = pickWeek(get('kpi_mingguan').data);
+  KPI_DEF.forEach((k) => {
+    const t = w[k.t], a = w[k.a];
+    const card = document.createElement('div'); card.className = 'pk-kpi';
+    const l = document.createElement('p'); l.className = 'pk-label'; l.textContent = k.label; card.appendChild(l);
+    const big = document.createElement('span'); big.className = 'pk-big';
+    if (isNum(a)) big.textContent = k.fmt(a); else { big.classList.add('pk-wait'); big.textContent = 'Belum diisi'; }
+    card.appendChild(big);
+    const tg = document.createElement('span'); tg.className = 'pk-delta'; tg.textContent = 'Target ' + (k.up ? '≥ ' : '≤ ') + k.fmt(t); card.appendChild(tg);
+    if (k.up) {
+      const bar = document.createElement('div'); bar.className = 'pk-bar';
+      const fill = document.createElement('i');
+      fill.style.width = (isNum(a) && t ? Math.min(1, a / t) * 100 : 0) + '%';
+      fill.style.background = isNum(a) && a >= t ? cssVar('--color-ok') : dash.colors[0];
+      bar.appendChild(fill); card.appendChild(bar);
+    }
+    const st = document.createElement('span'); st.className = 'pk-chip';
+    if (!isNum(a)) st.textContent = 'Menunggu data';
+    else {
+      const ok = k.up ? a >= t : a <= t;
+      st.textContent = ok ? 'Tercapai' : 'Belum tercapai';
+      st.classList.add(ok ? 'pk-good' : 'pk-bad');
+    }
+    card.appendChild(st);
+    el.appendChild(card);
+  });
+});
+
+/* ---------- vertical chart (line or bars) ---------- */
+function vChart(el, opt) {
+  const W = Math.max(300, el.clientWidth || 300), H = opt.height || 240;
+  el.replaceChildren();
+  const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+  const tip = makeTip(el);
+  const data = opt.data;
+  const maxV = d3.max([...data.map(opt.y), ...(opt.ref != null ? [opt.ref] : []), ...data.map((d) => opt.y2 ? opt.y2(d) : null).filter(isNum)]) * 1.18;
+  const y = d3.scaleLinear([0, maxV], [H - 28, 14]).nice();
+  const ticks = y.ticks(4);
+  const ml = measure(svg, ticks.map(opt.fmtAxis), 'pk-tick') + 10;
+  const mr = opt.ref != null ? measure(svg, [opt.refLabel], 'pk-tick') + 8 : 12;
+  const x = d3.scaleBand(data.map(opt.x), [ml, W - mr]).padding(0.35);
+  svg.append('g').selectAll('line').data(ticks).join('line')
+    .attr('x1', ml).attr('x2', W - mr).attr('y1', (d) => y(d)).attr('y2', (d) => y(d))
+    .attr('stroke', cssVar('--cds-chart-grid')).attr('stroke-width', 1);
+  svg.append('g').selectAll('text').data(ticks).join('text').attr('class', 'pk-tick')
+    .attr('x', ml - 8).attr('y', (d) => y(d)).attr('dy', '0.32em').attr('text-anchor', 'end').text(opt.fmtAxis);
+  const xl = svg.append('g').selectAll('text').data(data).join('text').attr('class', 'pk-tick')
+    .attr('x', (d) => x(opt.x(d)) + x.bandwidth() / 2).attr('y', H - 8).attr('text-anchor', 'middle').text((d) => opt.xLabel ? opt.xLabel(d) : opt.x(d));
+  const bw = x.step();
+  xl.each(function () { if (this.getComputedTextLength() > bw - 4) d3.select(this).text((d) => opt.xShort ? opt.xShort(d) : opt.x(d)); });
+  const color = dash.colors[0];
+  if (opt.kind === 'line') {
+    const cx = (d) => x(opt.x(d)) + x.bandwidth() / 2;
+    const has = data.filter((d) => isNum(opt.y(d)));
+    svg.append('path').datum(has).attr('fill', 'none').attr('stroke', color).attr('stroke-width', 2)
+      .attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round')
+      .attr('d', d3.line().x(cx).y((d) => y(opt.y(d))));
+    svg.append('g').selectAll('circle').data(has).join('circle').attr('cx', cx).attr('cy', (d) => y(opt.y(d))).attr('r', 3.5).attr('fill', color);
+    svg.append('g').selectAll('text').data(has).join('text').attr('class', 'pk-val')
+      .attr('x', cx).attr('y', (d) => y(opt.y(d)) - 9).attr('text-anchor', 'middle').text((d) => opt.fmtVal(opt.y(d)));
+    if (opt.y2) {
+      const c2 = dash.colors[1];
+      const pts = data.filter((d) => isNum(opt.y2(d)));
+      svg.append('g').selectAll('circle').data(pts).join('circle').attr('cx', cx).attr('cy', (d) => y(opt.y2(d))).attr('r', 4.5)
+        .attr('fill', 'none').attr('stroke', c2).attr('stroke-width', 2);
+      svg.append('g').selectAll('text').data(pts.filter((d) => !isNum(opt.y(d)))).join('text').attr('class', 'pk-val')
+        .attr('x', cx).attr('y', (d) => y(opt.y2(d)) - 10).attr('text-anchor', 'middle').text((d) => opt.fmtVal(opt.y2(d)));
+    }
+  } else {
+    const barW = Math.min(32, x.bandwidth());
+    const hasB = data.filter((d) => isNum(opt.y(d)));
+    svg.append('g').selectAll('rect').data(hasB).join('rect')
+      .attr('x', (d) => x(opt.x(d)) + (x.bandwidth() - barW) / 2).attr('width', barW)
+      .attr('y', (d) => y(opt.y(d))).attr('height', (d) => y(0) - y(opt.y(d)))
+      .attr('rx', 3).attr('fill', opt.barColor || color);
+    svg.append('g').selectAll('text').data(hasB).join('text').attr('class', 'pk-val')
+      .attr('x', (d) => x(opt.x(d)) + x.bandwidth() / 2).attr('y', (d) => y(opt.y(d)) - 6).attr('text-anchor', 'middle').text((d) => opt.fmtVal(opt.y(d)));
+    if (opt.y2) {
+      const pts = data.filter((d) => isNum(opt.y2(d)));
+      const c2 = dash.colors[1];
+      const cx = (d) => x(opt.x(d)) + x.bandwidth() / 2;
+      if (pts.length > 1) svg.append('path').datum(pts).attr('fill', 'none').attr('stroke', c2).attr('stroke-width', 2).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round').attr('d', d3.line().x(cx).y((d) => y(opt.y2(d))));
+      svg.append('g').selectAll('circle').data(pts).join('circle').attr('cx', cx).attr('cy', (d) => y(opt.y2(d))).attr('r', 4).attr('fill', c2);
+    }
+  }
+  if (opt.ref != null) {
+    svg.append('line').attr('x1', ml).attr('x2', W - mr).attr('y1', y(opt.ref)).attr('y2', y(opt.ref))
+      .attr('stroke', cssVar('--cds-chart-reference')).attr('stroke-width', 1.5).attr('stroke-dasharray', '5 4');
+    svg.append('text').attr('class', 'pk-tick').attr('x', W - mr + 4).attr('y', y(opt.ref)).attr('dy', '0.32em').text(opt.refLabel);
+  }
+  svg.append('line').attr('x1', ml).attr('x2', W - mr).attr('y1', y(0)).attr('y2', y(0)).attr('stroke', cssVar('--cds-chart-axis'));
+  svg.append('g').selectAll('rect').data(data).join('rect')
+    .attr('x', (d) => x(opt.x(d)) - (x.step() - x.bandwidth()) / 2).attr('width', x.step()).attr('y', 0).attr('height', H)
+    .attr('fill', 'transparent')
+    .on('mousemove', (event, d) => {
+      const [px, py] = d3.pointer(event, el);
+      showTip(tip, el, px, py, opt.tipHead(d), opt.tipLines(d));
+    })
+    .on('mouseleave', () => hideTip(tip));
+}
+
+dash.draw('chart_cpmql_okt', (el) => {
+  if (!chartReady(el, ['okt_mingguan', 'target_nov'])) return;
+  const t = first('target_nov').target_cpmql;
+  vChart(el, {
+    kind: 'line', data: get('okt_mingguan').data, x: (d) => d.minggu, y: (d) => d.cpmql_kum,
+    xShort: (d) => d.minggu.split('–')[0] + '…',
+    fmtAxis: rpShort, fmtVal: rpShort, ref: t, refLabel: 'Target ' + rpShort(t),
+    tipHead: (d) => d.minggu,
+    tipLines: (d) => ['CPMQL kumulatif: ' + rp(d.cpmql_kum), 'MQL kumulatif: ' + num(d.mql_kum), 'Biaya kumulatif: ' + rp(d.biaya_kum)],
+  });
+});
+dash.draw('chart_nr_okt', (el) => {
+  if (!chartReady(el, ['okt_mingguan', 'target_nov'])) return;
+  const t = first('target_nov').target_no_response_pct;
+  vChart(el, {
+    kind: 'bar', data: get('okt_mingguan').data, x: (d) => d.minggu, y: (d) => d.no_response_pct,
+    xShort: (d) => d.minggu.split('–')[0] + '…',
+    fmtAxis: (v) => Math.round(v * 100) + '%', fmtVal: (v) => Math.round(v * 100) + '%',
+    ref: t, refLabel: 'Target ' + Math.round(t * 100) + '%',
+    tipHead: (d) => d.minggu,
+    tipLines: (d) => ['No Response: ' + num(d.no_response_kum) + ' dari ' + num(d.leads_kum) + ' leads', 'Persentase: ' + pct(d.no_response_pct)],
+  });
+});
+dash.draw('chart_pacing', (el) => {
+  if (!chartReady(el, ['pacing_nov'])) return;
+  const m = dash.params().pacing === 'biaya' ? 'biaya' : 'mql';
+  const tk = m === 'biaya' ? 'target_biaya_kum' : 'target_mql_kum';
+  const ak = m === 'biaya' ? 'aktual_biaya_kum' : 'aktual_mql_kum';
+  const f = m === 'biaya' ? rpShort : num;
+  vChart(el, {
+    kind: 'bar', data: get('pacing_nov').data, x: (d) => 'Mg ' + d.minggu, y: (d) => d[tk], y2: (d) => d[ak],
+    barColor: cssVar('--cds-chart-muted'),
+    fmtAxis: f, fmtVal: f,
+    tipHead: (d) => 'Minggu ' + d.minggu + ' · ' + d.periode,
+    tipLines: (d) => ['Target kumulatif: ' + (m === 'biaya' ? rp(d[tk]) : num(d[tk])), 'Aktual kumulatif: ' + (isNum(d[ak]) ? (m === 'biaya' ? rp(d[ak]) : num(d[ak])) : 'belum diisi')],
+  });
+});
+dash.draw('chart_checkpoint', (el) => {
+  if (!chartReady(el, ['views_checkpoint'])) return;
+  vChart(el, {
+    kind: 'bar', data: get('views_checkpoint').data, x: (d) => d.label, y: (d) => d.target_mtd, y2: (d) => d.aktual_mtd,
+    barColor: cssVar('--cds-chart-muted'),
+    fmtAxis: (v) => num(v), fmtVal: (v) => num(v),
+    tipHead: (d) => 's.d. ' + d.label,
+    tipLines: (d) => ['Target MTD: ' + num(d.target_mtd), 'Aktual MTD: ' + (isNum(d.aktual_mtd) ? num(d.aktual_mtd) : 'belum diisi')],
+  });
+});
+
+dash.draw('chart_rekap_cpmql', (el) => {
+  if (!chartReady(el, ['rekap_bulanan'])) return;
+  vChart(el, {
+    kind: 'line', data: get('rekap_bulanan').data, x: (d) => d.label, y: (d) => d.cpmql, y2: (d) => d.target_cpmql,
+    fmtAxis: rpShort, fmtVal: rpShort,
+    tipHead: (d) => d.label,
+    tipLines: (d) => ['Realisasi: ' + (isNum(d.cpmql) ? rp(d.cpmql) : 'belum ada'), 'Target: ' + (isNum(d.target_cpmql) ? rp(d.target_cpmql) : 'tidak tercatat')],
+  });
+});
+dash.draw('chart_rekap_mql', (el) => {
+  if (!chartReady(el, ['rekap_bulanan'])) return;
+  vChart(el, {
+    kind: 'bar', data: get('rekap_bulanan').data, x: (d) => d.label, y: (d) => d.mql, y2: (d) => d.target_mql,
+    fmtAxis: num, fmtVal: num,
+    tipHead: (d) => d.label,
+    tipLines: (d) => ['Realisasi: ' + (isNum(d.mql) ? num(d.mql) : 'belum ada'), 'Target: ' + (isNum(d.target_mql) ? num(d.target_mql) : 'tidak tercatat'), 'Booking Fee: ' + (isNum(d.bf) ? num(d.bf) : 'belum ada')],
+  });
+});
+
+/* ---------- horizontal bars ---------- */
+function hBars(el, opt) {
+  const W = Math.max(300, el.clientWidth || 300);
+  const n = opt.data.length, rowH = opt.series.length > 1 ? 54 : 42;
+  const H = n * rowH + 8;
+  el.replaceChildren();
+  const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+  const tip = makeTip(el);
+  const maxV = opt.max || d3.max(opt.data, (d) => d3.max(opt.series, (s) => s.v(d) || 0));
+  const valW = measure(svg, opt.data.flatMap((d) => opt.series.map((s) => opt.fmt(s.v(d)))), 'pk-val') + 8;
+  const x = d3.scaleLinear([0, maxV], [0, W - valW]);
+  const g = svg.append('g').selectAll('g').data(opt.data).join('g').attr('transform', (d, i) => `translate(0,${i * rowH})`);
+  g.append('text').attr('class', 'pk-tick').attr('x', 0).attr('y', 12).text(opt.label);
+  opt.series.forEach((s, si) => {
+    const by = 18 + si * 14;
+    g.append('rect').attr('x', 0).attr('y', by).attr('height', 12).attr('rx', 3)
+      .attr('width', (d) => Math.max(1, x(s.v(d) || 0))).attr('fill', (d, i) => s.color(d, i));
+    g.append('text').attr('class', 'pk-val').attr('x', (d) => x(s.v(d) || 0) + 6).attr('y', by + 6).attr('dy', '0.32em').text((d) => opt.fmt(s.v(d)));
+  });
+  g.append('rect').attr('x', 0).attr('y', 0).attr('width', W).attr('height', rowH).attr('fill', 'transparent')
+    .on('mousemove', (event, d) => { const [px, py] = d3.pointer(event, el); showTip(tip, el, px, py, opt.label(d), opt.tipLines(d)); })
+    .on('mouseleave', () => hideTip(tip));
+}
+dash.draw('chart_creative', (el) => {
+  if (!chartReady(el, ['creative_meta_okt'])) return;
+  const tipe = dash.params().tipe === 'LPWA' ? 'LPWA' : 'CTWA';
+  const rows = get('creative_meta_okt').data.filter((r) => r.tipe === tipe && r.spend >= BATAS_SPEND_CREATIVE).sort((a, b) => a.cpl - b.cpl);
+  hBars(el, {
+    data: rows, label: (d) => d.iklan, fmt: rp,
+    series: [{v: (d) => d.cpl, color: (d, i) => i === 0 ? dash.colors[0] : cssVar('--cds-chart-muted')}],
+    tipLines: (d) => ['Biaya per lead: ' + rp(d.cpl), 'Spend: ' + rp(d.spend), 'Lead: ' + num(d.lead), 'CTR (link): ' + pct(d.ctr)],
+  });
+});
+dash.draw('chart_views_akun', (el) => {
+  if (!chartReady(el, ['organik_akun'])) return;
+  hBars(el, {
+    data: get('organik_akun').data, label: (d) => d.akun, fmt: num,
+    series: [
+      {v: (d) => d.baseline_views_minggu, color: () => cssVar('--cds-chart-muted')},
+      {v: (d) => d.target_views_minggu, color: () => dash.colors[0]},
+    ],
+    tipLines: (d) => ['Baseline/minggu: ' + num(d.baseline_views_minggu), 'Target/minggu: ' + num(d.target_views_minggu), 'Views Oktober: ' + num(d.views_okt) + ' (' + num(d.posting_okt) + ' posting)'],
+  });
+});
+
+dash.draw('chart_progres', (el) => {
+  if (!chartReady(el, ['progres_todo'])) return;
+  hBars(el, {
+    data: get('progres_todo').data, label: (d) => d.label + ' · ' + d.selesai + ' dari ' + d.total + ' selesai', fmt: (v) => Math.round((v || 0) * 100) + '%',
+    series: [{v: (d) => d.pct_selesai, color: (d) => d.pct_selesai >= 1 ? cssVar('--color-ok') : dash.colors[0]}],
+    max: 1,
+    tipLines: (d) => ['Selesai: ' + d.selesai, 'Proses: ' + d.proses, 'Terhambat: ' + d.terhambat, 'Belum: ' + d.belum],
+  });
+});
+
+/* ---------- tables ---------- */
+function tableDraw(name, ids, build) {
+  dash.draw(name, (tb) => {
+    tb.replaceChildren();
+    if (!okAll(ids)) return;
+    build().forEach((r) => {
+      const tr = document.createElement('tr');
+      if (r.key != null) tr.dataset.key = r.key;
+      r.cells.forEach(([v, n]) => {
+        const td = document.createElement('td');
+        if (n === 1) td.className = 'num'; else if (typeof n === 'string') td.className = n;
+        if (n === 'chip') { const c = document.createElement('span'); c.className = 'pk-chip' + (v === 'Selesai' ? ' pk-good' : v === 'Terhambat' ? ' pk-bad' : v === 'Proses' ? ' pk-mid' : ''); c.textContent = v; td.appendChild(c); }
+        else td.textContent = v;
+        tr.appendChild(td);
+      });
+      tb.appendChild(tr);
+    });
+  });
+}
+tableDraw('table_pacing', ['pacing_nov'], () => get('pacing_nov').data.map((d) => ({cells: [
+  [String(d.minggu)], [d.periode], [rp(d.target_biaya_kum), 1], [num(d.target_mql_kum), 1], [rp(d.target_cpmql_kum), 1], [rp(d.aktual_biaya_kum), 1], [num(d.aktual_mql_kum), 1],
+]})));
+tableDraw('table_organik', ['organik_akun', 'followers_tambah'], () => {
+  const add = get('followers_tambah').data;
+  return get('organik_akun').data.map((d) => {
+    const a = add.find((x) => x.akun === d.akun);
+    return {cells: [
+      [d.akun], [num(d.views_okt), 1], [d.target_posting_minggu], [num(d.target_avg_views), 1], [num(d.target_views_minggu), 1],
+      [num(d.followers_awal), 1], [num(d.target_followers), 1], [a && isNum(a.tambah) ? '+' + num(a.tambah) : '—', 1],
+    ]};
+  });
+});
+tableDraw('table_todo', ['todo_nov'], () => {
+  const p = dash.params();
+  const mg = p.minggu || 'semua', pic = p.pic || 'semua', jenis = p.jenis || 'semua';
+  return get('todo_nov').data
+    .filter((d) => (mg === 'semua' || d.minggu === mg) && (pic === 'semua' || d.pic === 'Semua' || d.pic.split(', ').includes(pic)) && (jenis === 'semua' || d.jenis === jenis))
+    .map((d) => ({key: d.id, cells: [
+      [d.minggu === 'Rutin' ? 'Rutin' : 'Minggu ' + d.minggu], [d.pic], [d.jenis], [d.todo, 'pk-w-lg'], [d.selesai_kalau, 'pk-w-md'],
+      [d.kpi], [d.dampak, 'pk-w-md'], [d.status, 'chip'], [d.hasil_aktual || '—', 'pk-w-md'], [d.catatan || '—', 'pk-w-md'],
+    ]}));
+});
+tableDraw('table_rekap', ['rekap_bulanan'], () => get('rekap_bulanan').data.map((d) => ({key: d.bulan, cells: [
+  [d.label], [rp(d.biaya), 1], [num(d.mql), 1], [num(d.target_mql), 1], [rp(d.cpmql), 1], [rp(d.target_cpmql), 1],
+  [num(d.bf), 1], [num(d.target_bf), 1], [pct(d.no_response_pct), 1], [num(d.views_organik), 1], [num(d.target_views), 1],
+]})));
+
+/* ---------- controls & tabs ---------- */
+let openTab = 'mingguan';
+function applyTab() {
+  document.querySelectorAll('[data-page]').forEach((s) => { s.hidden = s.dataset.page !== openTab; });
+  document.querySelectorAll('.pk-tab').forEach((b) => b.setAttribute('aria-selected', String(b.dataset.tab === openTab)));
+}
+document.querySelectorAll('.pk-tab').forEach((b) => b.addEventListener('click', () => {
+  openTab = b.dataset.tab; applyTab(); dash.setLink(openTab);
+}));
+const named = location.hash.slice(1);
+if (['mingguan', 'paid', 'organik', 'rekap'].includes(named)) openTab = named;
+if (named === 'timeline') openTab = 'mingguan';
+applyTab();
+
+document.querySelectorAll('[data-pacing]').forEach((b) => b.addEventListener('click', () => dash.setParams({pacing: b.dataset.pacing})));
+document.querySelectorAll('[data-tipe]').forEach((b) => b.addEventListener('click', () => dash.setParams({tipe: b.dataset.tipe})));
+document.querySelectorAll('[data-minggu]').forEach((b) => b.addEventListener('click', () => dash.setParams({minggu: b.dataset.minggu})));
+document.querySelectorAll('.pk-pic').forEach((s) => s.addEventListener('change', () => dash.setParams({pic: s.value})));
+document.querySelectorAll('.pk-jenis').forEach((s) => s.addEventListener('change', () => dash.setParams({jenis: s.value})));
+
+dash.onData(() => {
+  applyTab();
+  const p = dash.params();
+  document.querySelectorAll('[data-pacing]').forEach((b) => b.setAttribute('aria-pressed', String((p.pacing || 'mql') === b.dataset.pacing)));
+  document.querySelectorAll('[data-tipe]').forEach((b) => b.setAttribute('aria-pressed', String((p.tipe || 'CTWA') === b.dataset.tipe)));
+  document.querySelectorAll('[data-minggu]').forEach((b) => b.setAttribute('aria-pressed', String((p.minggu || 'semua') === b.dataset.minggu)));
+  document.querySelectorAll('.pk-pic').forEach((s) => { s.value = p.pic || 'semua'; });
+  document.querySelectorAll('.pk-jenis').forEach((s) => { s.value = p.jenis || 'semua'; });
+  document.querySelectorAll('[data-sw]').forEach((s) => { s.style.background = s.dataset.sw === 'muted' ? cssVar('--cds-chart-muted') : dash.colors[Number(s.dataset.sw)]; });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+[
+ {
+  "akun": "IG Anemone Indonesia",
+  "views_okt": 37504,
+  "posting_okt": 18,
+  "baseline_views_minggu": 8500,
+  "target_views_minggu": 12000,
+  "target_posting_minggu": "5",
+  "target_avg_views": 2400,
+  "followers_awal": 15961,
+  "target_followers": 16200
+ },
+ {
+  "akun": "TikTok",
+  "views_okt": 13148,
+  "posting_okt": 36,
+  "baseline_views_minggu": 3000,
+  "target_views_minggu": 4000,
+  "target_posting_minggu": "7 (min. 2 native)",
+  "target_avg_views": 570,
+  "followers_awal": 3841,
+  "target_followers": 4030
+ },
+ {
+  "akun": "YT Shorts",
+  "views_okt": 14982,
+  "posting_okt": 25,
+  "baseline_views_minggu": 3400,
+  "target_views_minggu": 4000,
+  "target_posting_minggu": "6 (mirror)",
+  "target_avg_views": 650,
+  "followers_awal": 4040,
+  "target_followers": 4160
+ },
+ {
+  "akun": "Life at Anemone",
+  "views_okt": 11486,
+  "posting_okt": 5,
+  "baseline_views_minggu": 2600,
+  "target_views_minggu": 3000,
+  "target_posting_minggu": "1–2",
+  "target_avg_views": 2000,
+  "followers_awal": 2565,
+  "target_followers": 2605
+ },
+ {
+  "akun": "Facebook",
+  "views_okt": 2649,
+  "posting_okt": 18,
+  "baseline_views_minggu": 600,
+  "target_views_minggu": 600,
+  "target_posting_minggu": "mirror",
+  "target_avg_views": null,
+  "followers_awal": null,
+  "target_followers": null
+ }
+]

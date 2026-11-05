@@ -1,0 +1,74 @@
+[
+ {
+  "iklan": "Hard Selling – Copy (6 Okt)",
+  "tipe": "CTWA",
+  "spend": 454264,
+  "lead": 38,
+  "cpl": 11954.32,
+  "ctr": 0.0048
+ },
+ {
+  "iklan": "Sby & Sda Hard (8 Okt)",
+  "tipe": "CTWA",
+  "spend": 1107432,
+  "lead": 73,
+  "cpl": 15170.3,
+  "ctr": 0.0048
+ },
+ {
+  "iklan": "Hard Sell 2 (6 Okt)",
+  "tipe": "CTWA",
+  "spend": 416185,
+  "lead": 17,
+  "cpl": 24481.47,
+  "ctr": 0.0067
+ },
+ {
+  "iklan": "Ms Ratih Gresik (5 Sep)",
+  "tipe": "CTWA",
+  "spend": 635136,
+  "lead": 18,
+  "cpl": 35285.33,
+  "ctr": 0.003
+ },
+ {
+  "iklan": "SBy SDA (21 Okt)",
+  "tipe": "LPWA",
+  "spend": 972937,
+  "lead": 36,
+  "cpl": 27026.03,
+  "ctr": 0.0097
+ },
+ {
+  "iklan": "Testi Ms Ratih (21 Sep)",
+  "tipe": "LPWA",
+  "spend": 2659050,
+  "lead": 91,
+  "cpl": 29220.33,
+  "ctr": 0.0358
+ },
+ {
+  "iklan": "Testi Ms Ratih (12 Okt)",
+  "tipe": "LPWA",
+  "spend": 1933682,
+  "lead": 29,
+  "cpl": 66678.69,
+  "ctr": 0.0369
+ },
+ {
+  "iklan": "Operasional LP Baru (12 Okt)",
+  "tipe": "LPWA",
+  "spend": 1334165,
+  "lead": 16,
+  "cpl": 83385.31,
+  "ctr": 0.0168
+ },
+ {
+  "iklan": "Hidden Gem Place 2 (25 Sep)",
+  "tipe": "LPWA",
+  "spend": 637418,
+  "lead": 7,
+  "cpl": 91059.71,
+  "ctr": 0.027
+ }
+]
