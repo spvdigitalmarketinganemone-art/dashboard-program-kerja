@@ -159,7 +159,7 @@ table.pk-table{width:100%;border-collapse:collapse;font-size:var(--cds-font-size
 
   <nav class="pk-tabs" role="tablist" aria-label="Halaman">
     <button class="pk-tab" id="tab-mingguan" role="tab" data-tab="mingguan" aria-selected="true">Target & to-do mingguan</button>
-    <button class="pk-tab" id="tab-paid" role="tab" data-tab="paid" aria-selected="false">Funnel A (Paid Ads)</button>
+    <button class="pk-tab" id="tab-paid" role="tab" data-tab="paid" aria-selected="false">Ads Franchise (Paid Ads)</button>
     <button class="pk-tab" id="tab-organik" role="tab" data-tab="organik" aria-selected="false">Organik (SMS)</button>
     <button class="pk-tab" id="tab-rekap" role="tab" data-tab="rekap" aria-selected="false">Rekap bulanan</button>
   </nav>
@@ -394,7 +394,7 @@ table.pk-table{width:100%;border-collapse:collapse;font-size:var(--cds-font-size
     </div>
     <div class="pk-card" id="card-rekap-table">
       <h3>Target vs realisasi per bulan</h3>
-      <p class="pk-note">Funnel A memakai periode sheet CPMQL (biaya termasuk PPN); views organik memakai bulan kalender.</p>
+      <p class="pk-note">Ads Franchise memakai periode sheet CPMQL (biaya termasuk PPN); views organik memakai bulan kalender.</p>
       <div class="pk-scroll">
         <table class="pk-table" data-source="rekap_bulanan" data-row-key="bulan">
           <thead><tr>
@@ -430,7 +430,7 @@ const cssVar = (n) => getComputedStyle(document.documentElement).getPropertyValu
 
 dash.calc('ringkasan_funnel', {
   inputs: ['funnel_bulanan', 'target_nov'],
-  title: 'Perubahan Funnel A',
+  title: 'Perubahan Ads Franchise',
   description: 'Perubahan September ke Oktober, dan Oktober ke target November.',
   fn: (funnel_bulanan, target_nov) => {
     const sep = funnel_bulanan.find((r) => r.bulan === '2026-09');

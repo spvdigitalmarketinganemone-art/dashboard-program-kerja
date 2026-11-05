@@ -1,6 +1,6 @@
 # Dashboard Program Kerja Digital Marketing — Anemone Indonesia
 
-Dashboard interaktif program kerja bulanan tim Digital Marketing: target & to-do mingguan, Funnel A (Paid Ads), Organik (SMS), dan rekap target vs realisasi per bulan.
+Dashboard interaktif program kerja bulanan tim Digital Marketing: target & to-do mingguan, Ads Franchise (Paid Ads), Organik (SMS), dan rekap target vs realisasi per bulan.
 
 - **Dashboard:** https://reporting.anemoneindonesia.com
 - **Hosting:** GitHub Pages dari branch `main` (repo **Public**), dengan custom domain `reporting.anemoneindonesia.com` (record CNAME di DNS serverorange → `spvdigitalmarketinganemone-art.github.io`). File `CNAME` di repo jangan dihapus. Dashboard dan semua isi repo bisa dibuka siapa saja yang punya link. Otomatis diperbarui setiap ada commit ke `main`.
@@ -20,7 +20,7 @@ Riwayat semua perubahan bisa dilihat di tab **Commits** repo ini.
 | `index.html` | Halaman dashboard (jangan diubah bot) |
 | `data/kpi_mingguan.json` | Target & aktual KPI per minggu |
 | `data/todo_nov.json` | To-do November: target, status, hasil aktual |
-| `data/pacing_nov.json` | Pacing Funnel A per minggu |
+| `data/pacing_nov.json` | Pacing Ads Franchise per minggu |
 | `data/views_checkpoint.json` | Checkpoint views organik |
 | `data/rekap_bulanan.json` | Target vs realisasi per bulan |
 | `data/funnel_bulanan.json`, `okt_mingguan.json`, `creative_meta_okt.json`, `organik_akun.json`, `target_nov.json` | Data acuan Oktober & target November |
