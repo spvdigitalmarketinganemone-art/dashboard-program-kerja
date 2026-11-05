@@ -160,7 +160,7 @@
   "minggu": "1",
   "pic": "SPV",
   "todo": "Kam 5 atau Jum 6 Nov — Rapat dengan sales: samakan definisi Warm & Hot leads, sepakati alur umpan balik dua arah, serta pencatatan alasan leads tidak lanjut, kecepatan respon, dan hasil closing. Minta rekap MQL Oktober per campaign paling lambat Selasa 10 Nov",
-  "status": "Proses",
+  "status": "Selesai",
   "jenis": "Fondasi",
   "selesai_kalau": "Kesepakatan tertulis soal definisi Warm & Hot, alur umpan balik, dan cara mencatat alasan tidak lanjut, kecepatan respon, closing; sales setuju setor rekap MQL Oktober per campaign Sel 10 Nov",
   "kpi": "MQL, No Response, BF",
@@ -360,19 +360,6 @@
   "selesai_kalau": "3 kolom tanggal ada di Kanban dan terisi untuk semua brief sejak 9 Nov",
   "kpi": "Ketepatan brief",
   "dampak": "Ketepatan waktu brief bisa dihitung di Minggu 5",
-  "hasil_aktual": null,
-  "catatan": null
- },
- {
-  "id": "t30",
-  "minggu": "2",
-  "pic": "CC",
-  "todo": "Syuting dan edit 2 video testimoni mitra",
-  "status": "Belum",
-  "jenis": "Langsung",
-  "selesai_kalau": "2 video testimoni selesai diedit",
-  "kpi": "MQL, CPMQL",
-  "dampak": "Draf siap dikirim Sen 16 Nov",
   "hasil_aktual": null,
   "catatan": null
  },

@@ -323,6 +323,13 @@ table.pk-table{width:100%;border-collapse:collapse;font-size:var(--cds-font-size
       <div class="pk-kpis" id="kpi-cards" data-draw="kpi_cards" data-source="kpi_mingguan"></div>
       <p class="pk-note">Potensi Booking Fee minggu ini: <b data-draw="potensi_bf" data-source="kpi_mingguan" data-field="potensi_bf">—</b> <span data-draw="kendala_bf" data-source="kpi_mingguan" data-field="kendala_bf"></span></p>
       <p class="pk-note">Mulai 5 Nov, MQL = calon mitra yang modalnya siap (definisi baru hasil rapat sales). Angka sebelum 5 Nov memakai definisi lama. CPMQL dan Booking Fee/CPBF dinilai setara.</p>
+      <h3>Target per role minggu ini</h3>
+      <div class="pk-scroll">
+        <table class="pk-table" data-source="kpi_mingguan">
+          <thead><tr><th>Role</th><th>Target</th><th>Aktual</th><th>Status</th></tr></thead>
+          <tbody data-draw="table_role"></tbody>
+        </table>
+      </div>
     </div>
 
     <div class="pk-grid">
@@ -465,11 +472,13 @@ dash.calc('followers_tambah', {
   fn: (organik_akun) => organik_akun.map((r) => ({akun: r.akun, tambah: r.target_followers == null ? null : r.target_followers - r.followers_awal})),
 });
 
+// To-do Minggu 3+ disembunyikan sementara: disusun ulang dari hasil tiap minggu. Tambah minggunya di sini untuk menampilkan lagi.
+const TODO_TAMPIL = ['Rutin', '1', '2'];
 dash.calc('progres_todo', {
   inputs: ['todo_nov'],
   title: 'Progres to-do per minggu',
   description: 'Jumlah to-do per minggu menurut status, dan persentase yang sudah selesai.',
-  fn: (todo_nov) => ['Rutin', '1', '2', '3', '4', '5'].map((m) => {
+  fn: (todo_nov) => TODO_TAMPIL.map((m) => {
     const rows = todo_nov.filter((r) => r.minggu === m);
     const c = (st) => rows.filter((r) => r.status === st).length;
     return {minggu: m, label: m === 'Rutin' ? 'Rutin' : 'Minggu ' + m, total: rows.length, selesai: c('Selesai'), proses: c('Proses'), terhambat: c('Terhambat'), belum: c('Belum'), pct_selesai: rows.length ? c('Selesai') / rows.length : 0};
@@ -553,14 +562,14 @@ textDraw('followers_tambah_total', ['ringkasan_organik'], () => { const v = firs
 
 /* ---------- weekly KPI ---------- */
 const KPI_DEF = [
-  {label: 'MQL kumulatif', t: 'target_mql_kum', a: 'aktual_mql_kum', fmt: (v) => num(v), up: true},
-  {label: 'CPMQL kumulatif', t: 'target_cpmql_kum', a: 'aktual_cpmql_kum', fmt: (v) => rp(v), up: false},
-  {label: 'No Response', t: 'target_nr_pct', a: 'aktual_nr_pct', fmt: (v) => pct(v), up: false},
-  {label: 'Views organik kumulatif', t: 'target_views_kum', a: 'aktual_views_kum', fmt: (v) => num(v), up: true},
-  {label: 'Followers bersih (4 akun)', t: 'target_followers', a: 'aktual_followers', fmt: (v) => isNum(v) ? '+' + num(v) : '—', up: true},
-  {label: 'Booking Fee kumulatif', t: 'target_bf_kum', a: 'aktual_bf_kum', fmt: (v) => num(v), up: true},
-  {label: 'CPBF kumulatif', t: 'target_cpbf', a: 'aktual_cpbf_kum', fmt: (v) => rp(v), up: false},
-  {label: 'Rasio MQL → Booking Fee', t: 'target_mql_bf_pct', a: 'aktual_mql_bf_pct', fmt: (v) => pct(v), up: true},
+  {role: 'Paid Ads', label: 'MQL kumulatif', t: 'target_mql_kum', a: 'aktual_mql_kum', fmt: (v) => num(v), up: true},
+  {role: 'Paid Ads', label: 'CPMQL kumulatif', t: 'target_cpmql_kum', a: 'aktual_cpmql_kum', fmt: (v) => rp(v), up: false},
+  {role: 'Paid Ads', label: 'No Response', t: 'target_nr_pct', a: 'aktual_nr_pct', fmt: (v) => pct(v), up: false},
+  {role: 'SMS', label: 'Views organik kumulatif', t: 'target_views_kum', a: 'aktual_views_kum', fmt: (v) => num(v), up: true},
+  {role: 'SMS', label: 'Followers bersih (4 akun)', t: 'target_followers', a: 'aktual_followers', fmt: (v) => isNum(v) ? '+' + num(v) : '—', up: true},
+  {role: 'Paid Ads', label: 'Booking Fee kumulatif', t: 'target_bf_kum', a: 'aktual_bf_kum', fmt: (v) => num(v), up: true},
+  {role: 'Paid Ads', label: 'CPBF kumulatif', t: 'target_cpbf', a: 'aktual_cpbf_kum', fmt: (v) => rp(v), up: false},
+  {role: 'Paid Ads', label: 'Rasio MQL → Booking Fee', t: 'target_mql_bf_pct', a: 'aktual_mql_bf_pct', fmt: (v) => pct(v), up: true},
 ];
 function pickWeek(rows) {
   const n = Number(dash.params().minggu);
@@ -845,12 +854,29 @@ tableDraw('table_organik', ['organik_akun', 'followers_tambah'], () => {
 tableDraw('table_todo', ['todo_nov'], () => {
   const p = dash.params();
   const mg = p.minggu || 'semua', pic = p.pic || 'semua', jenis = p.jenis || 'semua';
+  if (mg !== 'semua' && !TODO_TAMPIL.includes(mg)) return [{cells: [['Minggu ' + mg], ['—'], ['—'], ['To-do minggu ini disusun menyesuaikan hasil minggu sebelumnya.', 'pk-w-lg'], [''], [''], [''], [''], [''], ['']]}];
   return get('todo_nov').data
-    .filter((d) => (mg === 'semua' || d.minggu === mg) && (pic === 'semua' || d.pic === 'Semua' || d.pic.split(', ').includes(pic)) && (jenis === 'semua' || d.jenis === jenis))
+    .filter((d) => TODO_TAMPIL.includes(d.minggu) && (mg === 'semua' || d.minggu === mg) && (pic === 'semua' || d.pic === 'Semua' || d.pic.split(', ').includes(pic)) && (jenis === 'semua' || d.jenis === jenis))
     .map((d) => ({key: d.id, cells: [
       [d.minggu === 'Rutin' ? 'Rutin' : 'Minggu ' + d.minggu], [d.pic], [d.jenis], [d.todo, 'pk-w-lg'], [d.selesai_kalau, 'pk-w-md'],
       [d.kpi], [d.dampak, 'pk-w-md'], [d.status, 'chip'], [d.hasil_aktual || '—', 'pk-w-md'], [d.catatan || '—', 'pk-w-md'],
     ]}));
+});
+tableDraw('table_role', ['kpi_mingguan'], () => {
+  const w = pickWeek(get('kpi_mingguan').data);
+  const rows = ['Paid Ads', 'SMS'].map((role) => {
+    const ks = KPI_DEF.filter((k) => k.role === role);
+    const filled = ks.filter((k) => isNum(w[k.a]));
+    const hit = filled.filter((k) => k.up ? w[k.a] >= w[k.t] : w[k.a] <= w[k.t]).length;
+    return {cells: [
+      [role],
+      [ks.map((k) => k.label + ' ' + (k.up ? '≥ ' : '≤ ') + k.fmt(w[k.t])).join(' · '), 'pk-w-lg'],
+      [filled.length ? filled.map((k) => k.label + ' ' + k.fmt(w[k.a])).join(' · ') : 'Belum diisi', 'pk-w-md'],
+      [filled.length ? hit + ' dari ' + ks.length + ' tercapai' : 'Menunggu data'],
+    ]};
+  });
+  rows.push({cells: [['CC'], [w.target_cc || '—', 'pk-w-lg'], ['Lihat status to-do CC', 'pk-w-md'], ['—']]});
+  return rows;
 });
 tableDraw('table_rekap', ['rekap_bulanan'], () => get('rekap_bulanan').data.map((d) => ({key: d.bulan, cells: [
   [d.label], [rp(d.biaya), 1], [num(d.mql), 1], [num(d.target_mql), 1], [rp(d.cpmql), 1], [rp(d.target_cpmql), 1],

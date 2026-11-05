@@ -178,8 +178,6 @@ Minggu kerja Senin–Sabtu. Minggu 1 hanya berisi pekerjaan prasyarat di akhir m
   *Selesai kalau:* Definisi interaksi tertulis dan Facebook terhubung ke Dashboard KPI · *KPI:* Views, Akurasi data
 - [ ] **CC:** Tambahkan kolom di Kanban: tanggal brief diterima, tanggal draf dikirim, dan tanggal tayang  
   *Selesai kalau:* 3 kolom tanggal ada di Kanban dan terisi untuk semua brief sejak 9 Nov · *KPI:* Ketepatan brief
-- [ ] **CC:** Syuting dan edit 2 video testimoni mitra  
-  *Selesai kalau:* 2 video testimoni selesai diedit · *KPI:* MQL, CPMQL
 - [ ] **SMS, CC:** Sepakati pembagian konten TikTok: berapa yang dibuat khusus TikTok dan berapa yang boleh adaptasi dari Reels IG, sesuai kapasitas CC  
   *Selesai kalau:* Jumlah konten TikTok native vs adaptasi per minggu disepakati dan dicatat · *KPI:* Views
 - [ ] **CC:** Kumpulkan bank hook dari konten IG terbaik (SPMB 25 Jun, 4 Sep, 3 Jun) sebagai acuan script  
@@ -191,59 +189,9 @@ Minggu kerja Senin–Sabtu. Minggu 1 hanya berisi pekerjaan prasyarat di akhir m
 - [ ] **Pihak lain:** Mas Dwi: cek kemampuan WA Business biasa di cabang dan susun solusi tracking (CTWA click ID) yang tidak menambah banyak kerjaan cabang  
   *Selesai kalau:* Usulan solusi tertulis beserta kebutuhan dari cabang · *KPI:* MQL (uji coba Desember)
 
-### Minggu 3 (16–21 Nov)
-- [ ] **CC:** Sen 16 Nov — Kirim draf video testimoni ke Paid Ads, paling lambat 2 hari sebelum jadwal tayang  
-  *Selesai kalau:* Draf testimoni diterima Paid Ads Sen 16 Nov · *KPI:* MQL
-- [ ] **Paid Ads:** Rab 18 Nov — Review draf testimoni, minta revisi kalau perlu, lalu tayangkan iklannya  
-  *Selesai kalau:* 2 iklan testimoni aktif per Rab 18 Nov · *KPI:* MQL, CPMQL
-- [ ] **CC:** Finalkan template brief untuk tiap format (carousel, video, single post, iklan): isi wajib, detail reference, aturan font, dan data yang dibutuhkan  
-  *Selesai kalau:* Template brief untuk carousel, video, single post, dan iklan disetujui SPV · *KPI:* Ketepatan brief
-- [ ] **SMS:** Pastikan semua konten opini lewat QC supervisor sebelum tayang  
-  *Selesai kalau:* Semua konten opini lewat QC supervisor sebelum tayang · *KPI:* Violation, Views
-- [ ] **SMS:** Upload 2 video TikTok pertama yang dibuat khusus untuk TikTok (bukan potongan dari IG)  
-  *Selesai kalau:* 2 video khusus TikTok ter-upload paling lambat Sab 21 Nov · *KPI:* Views, Followers
-- [ ] **SPV:** Sesuaikan target views & followers berdasarkan angka asli November sejauh ini, dengan rata-rata Jan–Okt dari report IG sebagai pembanding (hanya sekali)  
-  *Selesai kalau:* Target views dan followers yang sudah disesuaikan tercatat di dashboard · *KPI:* Views, Followers
-- [ ] **SPV:** Evaluasi tengah bulan: MQL, CPMQL, views, followers, ditambah kecepatan respon dan status MQL. Diskusikan bersama HOD apa yang perlu disesuaikan  
-  *Selesai kalau:* Catatan evaluasi berisi status tiap KPI vs target dan hasil diskusi dengan HOD soal penyesuaiannya · *KPI:* Semua KPI
-- [ ] **Paid Ads:** Audit sumber lonjakan follower IG Januari & April di Meta Ads  
-  *Selesai kalau:* Ringkasan apakah lonjakan berasal dari iklan, event, atau sumber lain · *KPI:* Followers
-- [ ] **SMS:** Rekap rata-rata views per pilar dan hari posting di November, bandingkan dengan rata-rata Jan–Okt  
-  *Selesai kalau:* Tabel per pilar & hari tersedia untuk evaluasi tengah bulan · *KPI:* Views
-- [ ] **CC:** Produksi konten slot bebas Minggu 3 sesuai brief SMS  
-  *Selesai kalau:* 1 konten slot bebas tayang di Minggu 3 · *KPI:* Views
-- [ ] **Paid Ads:** Rab 18 Nov (seminggu setelah pertanyaan pembuka chat baru aktif 11 Nov) — Cek apakah persentase lead yang tidak merespons sudah turun  
-  *Selesai kalau:* Perbandingan No Response sebelum dan sesudah pertanyaan pembuka chat diganti · *KPI:* No Response
+### Minggu 3–5
+To-do Minggu 3, 4, dan 5 disusun menyesuaikan hasil tiap minggu, menyusul setelah evaluasi mingguan.
 
-### Minggu 4 (23–28 Nov)
-- [ ] **Paid Ads:** Sen 23 Nov 09:00 — Setor data leads Jan–Okt  
-  *Selesai kalau:* Data leads Jan–Okt diterima Sen 23 Nov 09:00 · *KPI:* Akurasi data
-- [ ] **CC:** Sen 23 Nov 09:30 — Setor report CC dan data outlet lengkap ke KPI Digital  
-  *Selesai kalau:* Report CC dan data outlet lengkap masuk KPI Digital Sen 23 Nov 09:30 · *KPI:* Akurasi data
-- [ ] **Paid Ads:** Pindahkan budget ke iklan yang biaya per MQL-nya paling murah, dan matikan iklan yang paling mahal  
-  *Selesai kalau:* Budget sudah dipindahkan dan iklan dengan biaya per MQL termahal dimatikan · *KPI:* CPMQL, MQL
-- [ ] **Paid Ads:** Kirim brief iklan cadangan untuk Desember ke CC, karena biaya iklan biasanya naik menjelang 12.12  
-  *Selesai kalau:* Brief iklan cadangan Desember diterima CC · *KPI:* CPMQL
-- [ ] **SMS:** Perbanyak pilar konten dengan rata-rata views tertinggi di November, dan kurangi postingan foto ucapan hari besar  
-  *Selesai kalau:* Jadwal Minggu 4–5 diubah sesuai hasil rekap per pilar; foto ucapan maksimal 1 per minggu · *KPI:* Views, Followers
-- [ ] **SMS:** Susun draf jadwal konten Desember dengan komposisi pilar yang sama, memakai isu rapor semester dan libur sekolah sebagai bahan Isu Pendidikan  
-  *Selesai kalau:* Draf jadwal konten Desember diserahkan ke SPV · *KPI:* Views
-- [ ] **SPV:** Susun arah target audiens dan pesan utama untuk Desember  
-  *Selesai kalau:* Arah audiens dan pesan utama Desember tertulis · *KPI:* MQL, Views
-- [ ] **CC:** Produksi konten slot bebas Minggu 4 sesuai brief SMS  
-  *Selesai kalau:* 1 konten slot bebas tayang di Minggu 4 · *KPI:* Followers, MQL
-
-### Minggu 5 (30 Nov–5 Des)
-- [ ] **SMS:** Catat followers terakhir, tutup data organik per 30 November, lalu buat laporan bulanan organik dengan format report IG Jan–Okt (per pilar, format, hari posting, follow & unfollow)  
-  *Selesai kalau:* Laporan bulanan organik (views, followers, violation, format terbaik) terkirim · *KPI:* Views, Followers
-- [ ] **CC:** Rekap berapa brief yang diterima tepat waktu (5 hari sebelum tayang) dan draf yang dikirim tepat waktu (2 hari sebelum tayang) selama November  
-  *Selesai kalau:* Persentase brief dan draf tepat waktu selama November terhitung · *KPI:* Ketepatan brief
-- [ ] **Paid Ads:** Kejar sisa target MQL sampai 6 Desember, lalu buat laporan bulanan Ads Franchise  
-  *Selesai kalau:* Laporan Ads Franchise terkirim setelah periode ditutup 6 Des · *KPI:* MQL, CPMQL, BF
-- [ ] **SPV:** Susun laporan bulanan dengan bantuan AI (tarik data, rangkum, isi dashboard). SPV cukup review dan memberi kesimpulan  
-  *Selesai kalau:* Laporan bulanan tersusun dengan bantuan AI dan sudah direview SPV · *KPI:* Semua KPI
-- [ ] **SPV:** Rekap 4 indikator baru (kecepatan respon, status MQL, alasan leads tidak lanjut, hasil closing) dan tetapkan angka awal untuk Desember  
-  *Selesai kalau:* Rekap 4 indikator beserta angka awal Desember tertulis · *KPI:* Kecepatan respon, MQL, BF
 ---
 
 ## 6. Risiko
