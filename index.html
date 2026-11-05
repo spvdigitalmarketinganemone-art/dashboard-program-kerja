@@ -27,6 +27,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:var(-
 .dash-skeleton{background:linear-gradient(90deg,var(--color-border-line) 0%,transparent 50%,var(--color-border-line) 100%);background-size:200% 100%;animation:pkshim 1.4s linear infinite;border-radius:var(--cds-radius);opacity:.5}
 @keyframes pkshim{from{background-position:200% 0}to{background-position:-200% 0}}
 
+
 .pk{font-family:var(--font-anthropic-sans);color:var(--color-fg);display:flex;flex-direction:column;gap:var(--cds-gap-lg)}
 .pk-head{display:flex;flex-direction:column;gap:var(--cds-gap-xs)}
 .pk-title{font-family:var(--font-anthropic-serif);font-weight:400;font-size:var(--cds-font-size-title);margin:0}
@@ -320,6 +321,8 @@ table.pk-table{width:100%;border-collapse:collapse;font-size:var(--cds-font-size
       <h3>Target hasil minggu ini: <span data-draw="kpi_week_label" data-source="kpi_mingguan">—</span></h3>
       <p class="pk-note">Angka kumulatif sejak awal periode. Aktual diisi tiap Jumat dari laporan tim. Periode data Senin–Minggu, mengikuti sheet benchmark.</p>
       <div class="pk-kpis" id="kpi-cards" data-draw="kpi_cards" data-source="kpi_mingguan"></div>
+      <p class="pk-note">Potensi Booking Fee minggu ini: <b data-draw="potensi_bf" data-source="kpi_mingguan" data-field="potensi_bf">—</b> <span data-draw="kendala_bf" data-source="kpi_mingguan" data-field="kendala_bf"></span></p>
+      <p class="pk-note">Mulai 5 Nov, MQL = calon mitra yang modalnya siap (definisi baru hasil rapat sales). Angka sebelum 5 Nov memakai definisi lama. CPMQL dan Booking Fee/CPBF dinilai setara.</p>
     </div>
 
     <div class="pk-grid">
@@ -346,6 +349,7 @@ table.pk-table{width:100%;border-collapse:collapse;font-size:var(--cds-font-size
           <option value="Paid Ads">Paid Ads</option>
           <option value="SMS">SMS</option>
           <option value="CC">CC</option>
+          <option value="Pihak lain">Pihak lain</option>
         </select>
         <select class="pk-select pk-jenis" aria-label="Jenis">
           <option value="semua">Semua jenis</option>
@@ -554,6 +558,9 @@ const KPI_DEF = [
   {label: 'No Response', t: 'target_nr_pct', a: 'aktual_nr_pct', fmt: (v) => pct(v), up: false},
   {label: 'Views organik kumulatif', t: 'target_views_kum', a: 'aktual_views_kum', fmt: (v) => num(v), up: true},
   {label: 'Followers bersih (4 akun)', t: 'target_followers', a: 'aktual_followers', fmt: (v) => isNum(v) ? '+' + num(v) : '—', up: true},
+  {label: 'Booking Fee kumulatif', t: 'target_bf_kum', a: 'aktual_bf_kum', fmt: (v) => num(v), up: true},
+  {label: 'CPBF kumulatif', t: 'target_cpbf', a: 'aktual_cpbf_kum', fmt: (v) => rp(v), up: false},
+  {label: 'Rasio MQL → Booking Fee', t: 'target_mql_bf_pct', a: 'aktual_mql_bf_pct', fmt: (v) => pct(v), up: true},
 ];
 function pickWeek(rows) {
   const n = Number(dash.params().minggu);
@@ -566,6 +573,16 @@ dash.draw('kpi_week_label', (el) => {
   if (!okAll(['kpi_mingguan'])) { el.textContent = '—'; return; }
   const w = pickWeek(get('kpi_mingguan').data);
   el.textContent = 'Minggu ' + w.minggu + ' (' + w.periode + ')';
+});
+dash.draw('potensi_bf', (el) => {
+  if (!okAll(['kpi_mingguan'])) { el.textContent = '—'; return; }
+  const w = pickWeek(get('kpi_mingguan').data);
+  el.textContent = isNum(w.potensi_bf) ? num(w.potensi_bf) : 'belum dilaporkan';
+});
+dash.draw('kendala_bf', (el) => {
+  if (!okAll(['kpi_mingguan'])) { el.textContent = ''; return; }
+  const w = pickWeek(get('kpi_mingguan').data);
+  el.textContent = w.kendala_bf ? '(' + w.kendala_bf + ')' : '';
 });
 dash.draw('kpi_cards', (el) => {
   if (!chartReady(el, ['kpi_mingguan'])) return;

@@ -2,8 +2,8 @@
 
 Dashboard interaktif program kerja bulanan tim Digital Marketing: target & to-do mingguan, Funnel A (Paid Ads), Organik (SMS), dan rekap target vs realisasi per bulan.
 
-- **Dashboard:** https://spvdigitalmarketinganemone-art.github.io/dashboard-program-kerja/
-- **Hosting:** GitHub Pages dari branch `main` (repo **Public**). Dashboard dan semua isi repo bisa dibuka siapa saja yang punya link. Otomatis diperbarui setiap ada commit ke `main`.
+- **Dashboard:** https://reporting.anemoneindonesia.com
+- **Hosting:** GitHub Pages dari branch `main` (repo **Public**), dengan custom domain `reporting.anemoneindonesia.com` (record CNAME di DNS serverorange → `spvdigitalmarketinganemone-art.github.io`). File `CNAME` di repo jangan dihapus. Dashboard dan semua isi repo bisa dibuka siapa saja yang punya link. Otomatis diperbarui setiap ada commit ke `main`.
 - **Program kerja November 2026 (teks):** [docs/program-kerja-dm-november-2026.md](docs/program-kerja-dm-november-2026.md)
 
 ## Cara update

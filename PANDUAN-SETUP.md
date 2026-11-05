@@ -10,7 +10,7 @@ Akun GitHub: akun tim DM (spv.digitalmarketinganemone@gmail.com). Nama menu di G
 ## 2. Hosting dashboard
 Pilih salah satu.
 
-**Yang dipakai sekarang (sejak 5 Nov 2026): Opsi B, GitHub Pages.** Repo `spvdigitalmarketinganemone-art/dashboard-program-kerja` sudah **Public**, dan dashboard ada di https://spvdigitalmarketinganemone-art.github.io/dashboard-program-kerja/. Opsi A belum bisa dipakai karena paket Zero Trust Free butuh kartu untuk verifikasi.
+**Yang dipakai sekarang (sejak 5 Nov 2026): Opsi B, GitHub Pages.** Repo `spvdigitalmarketinganemone-art/dashboard-program-kerja` sudah **Public**, dan dashboard ada di https://reporting.anemoneindonesia.com. Opsi A belum bisa dipakai karena paket Zero Trust Free butuh kartu untuk verifikasi.
 
 ### Opsi A (lebih aman, belum dipakai): Cloudflare Workers + Access — hanya tim yang bisa membuka
 Gratis, dan dashboard hanya bisa dibuka oleh email yang diizinkan. Paket Zero Trust Free tetap meminta kartu untuk verifikasi.
@@ -29,7 +29,10 @@ Gratis, dan dashboard hanya bisa dibuka oleh email yang diizinkan. Paket Zero Tr
 Lebih sederhana, tapi **datanya terbuka**. Di paket GitHub gratis, GitHub Pages hanya bisa dipakai kalau repo-nya **Public**, artinya file data (budget, CPMQL), dokumen, dan seluruh riwayat commit juga bisa dibaca siapa saja.
 1. Ubah repo menjadi Public (Settings → General).
 2. Settings → **Pages** → Source: **Deploy from a branch**, branch `main`, folder `/ (root)`.
-3. Alamat dashboard: https://spvdigitalmarketinganemone-art.github.io/dashboard-program-kerja/
+3. Alamat dashboard: https://reporting.anemoneindonesia.com (alamat bawaan `https://spvdigitalmarketinganemone-art.github.io/dashboard-program-kerja/` otomatis dialihkan ke sini).
+   - Custom domain diatur di Settings → Pages → Custom domain = `reporting.anemoneindonesia.com`, centang **Enforce HTTPS**.
+   - Di DNS anemoneindonesia.com (panel serverorange): record **CNAME** `reporting` → `spvdigitalmarketinganemone-art.github.io`.
+   - Kalau dashboard sudah tidak dipakai atau repo dihapus, **hapus juga record CNAME itu** supaya subdomain tidak bisa diklaim orang lain di GitHub Pages.
 4. Setiap kali bot menyimpan perubahan di GitHub, GitHub Pages memperbarui dashboard dalam 1–2 menit.
 5. Worker Cloudflare lama (`dashboard-program-kerja.spv-digitalmarketinganemone.workers.dev`) tidak dipakai lagi. Hapus atau matikan Worker URL-nya di Cloudflare supaya tidak ada dua alamat dashboard.
 

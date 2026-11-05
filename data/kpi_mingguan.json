@@ -13,7 +13,15 @@
   "target_views_kum": 27000,
   "aktual_views_kum": null,
   "target_followers": 187,
-  "aktual_followers": null
+  "aktual_followers": null,
+  "target_bf_kum": 1,
+  "aktual_bf_kum": null,
+  "target_cpbf": 2500000,
+  "aktual_cpbf_kum": null,
+  "target_mql_bf_pct": 0.15,
+  "aktual_mql_bf_pct": null,
+  "potensi_bf": 6,
+  "kendala_bf": "3 menunggu lokasi, 1 menyiapkan modal, 1 masih konfirmasi, 1 belum disebut kendalanya"
  },
  {
   "minggu": 2,
@@ -29,7 +37,15 @@
   "target_views_kum": 50000,
   "aktual_views_kum": null,
   "target_followers": 350,
-  "aktual_followers": null
+  "aktual_followers": null,
+  "target_bf_kum": 2,
+  "aktual_bf_kum": null,
+  "target_cpbf": 2500000,
+  "aktual_cpbf_kum": null,
+  "target_mql_bf_pct": 0.15,
+  "aktual_mql_bf_pct": null,
+  "potensi_bf": null,
+  "kendala_bf": null
  },
  {
   "minggu": 3,
@@ -45,7 +61,15 @@
   "target_views_kum": 73000,
   "aktual_views_kum": null,
   "target_followers": 514,
-  "aktual_followers": null
+  "aktual_followers": null,
+  "target_bf_kum": 3,
+  "aktual_bf_kum": null,
+  "target_cpbf": 2500000,
+  "aktual_cpbf_kum": null,
+  "target_mql_bf_pct": 0.15,
+  "aktual_mql_bf_pct": null,
+  "potensi_bf": null,
+  "kendala_bf": null
  },
  {
   "minggu": 4,
@@ -61,7 +85,15 @@
   "target_views_kum": 97000,
   "aktual_views_kum": null,
   "target_followers": 677,
-  "aktual_followers": null
+  "aktual_followers": null,
+  "target_bf_kum": 5,
+  "aktual_bf_kum": null,
+  "target_cpbf": 2500000,
+  "aktual_cpbf_kum": null,
+  "target_mql_bf_pct": 0.15,
+  "aktual_mql_bf_pct": null,
+  "potensi_bf": null,
+  "kendala_bf": null
  },
  {
   "minggu": 5,
@@ -77,6 +109,14 @@
   "target_views_kum": 100000,
   "aktual_views_kum": null,
   "target_followers": 700,
-  "aktual_followers": null
+  "aktual_followers": null,
+  "target_bf_kum": 6,
+  "aktual_bf_kum": null,
+  "target_cpbf": 2500000,
+  "aktual_cpbf_kum": null,
+  "target_mql_bf_pct": 0.15,
+  "aktual_mql_bf_pct": null,
+  "potensi_bf": null,
+  "kendala_bf": null
  }
 ]

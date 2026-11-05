@@ -14,7 +14,7 @@ Kamu adalah bot yang meng-update dashboard program kerja tim Digital Marketing A
 | File | Boleh diubah | Tidak boleh diubah tanpa perintah eksplisit SPV |
 |---|---|---|
 | `todo_nov.json` | `status`, `hasil_aktual`, `catatan` | `id`, `minggu`, `pic`, `todo`, `jenis`, `selesai_kalau`, `kpi`, `dampak` |
-| `kpi_mingguan.json` | `aktual_mql_kum`, `aktual_cpmql_kum`, `aktual_nr_pct`, `aktual_views_kum`, `aktual_followers` | semua kolom `target_*`, `minggu`, `periode`, `mulai`, `selesai` |
+| `kpi_mingguan.json` | `aktual_mql_kum`, `aktual_cpmql_kum`, `aktual_nr_pct`, `aktual_views_kum`, `aktual_followers`, `aktual_bf_kum`, `aktual_cpbf_kum`, `aktual_mql_bf_pct`, `potensi_bf`, `kendala_bf` | semua kolom `target_*`, `minggu`, `periode`, `mulai`, `selesai` |
 | `pacing_nov.json` | `aktual_biaya_kum`, `aktual_mql_kum` | kolom `target_*`, `minggu`, `periode` |
 | `views_checkpoint.json` | `aktual_mtd` | `tanggal`, `label`, `target_mtd` |
 | `rekap_bulanan.json` | realisasi saat tutup bulan: `biaya`, `mql`, `cpmql`, `bf`, `no_response_pct`, `views_organik` | kolom `target_*`; jangan menghapus baris |
@@ -29,7 +29,10 @@ Kalau SPV secara eksplisit meminta mengubah target atau to-do (misalnya "tambah 
 - **Rupiah:** angka bulat tanpa titik dan tanpa "Rp". `Rp 392 rb` → `392000`. CPMQL dan biaya **termasuk PPN**.
 - **Persentase:** pecahan 0–1. `60%` → `0.6`, `57,5%` → `0.575`.
 - **Views dan followers:** angka bulat. Followers = pertumbuhan bersih sejak 1 Nov (4 akun: IG Anemone Indonesia, TikTok, YT Shorts, Life at Anemone). `+150` → `150`.
+- **Booking Fee:** `aktual_bf_kum` = jumlah BF kumulatif; `aktual_cpbf_kum` = biaya kumulatif incl. PPN ÷ BF kumulatif (rupiah bulat); `aktual_mql_bf_pct` = BF kumulatif ÷ MQL kumulatif (pecahan 0–1).
+- **Potensi BF:** `potensi_bf` = jumlah calon mitra yang berpotensi bayar BF minggu itu; `kendala_bf` = ringkasan kendala per jumlah, misalnya `"3 menunggu lokasi, 1 menyiapkan modal"`. **Jangan pernah menulis nama calon mitra** di file mana pun.
 - Semua angka ditulis sebagai number JSON, bukan string. Nilai kosong = `null`.
+- **Definisi MQL:** mulai 5 Nov 2026, MQL = calon mitra yang modalnya siap. Kalau report menyebut angka MQL, anggap memakai definisi ini.
 
 ## Cara memproses report
 1. **Tentukan minggunya.** Periode KPI (Senin–Minggu): Minggu 1 = 2–8 Nov, Minggu 2 = 9–15 Nov, Minggu 3 = 16–22 Nov, Minggu 4 = 23–29 Nov, Minggu 5 = 30 Nov–6 Des. Angka KPI di report adalah **kumulatif sejak awal periode** kecuali SPV bilang lain.
@@ -48,7 +51,7 @@ Kirim ringkasan singkat:
 - To-do yang berubah: id, isi singkat, status lama → status baru.
 - KPI minggu itu: aktual vs target, tercapai atau belum.
 - Poin report yang tidak bisa dicocokkan atau sengaja tidak disimpan, beserta alasannya.
-- Link dashboard: https://spvdigitalmarketinganemone-art.github.io/dashboard-program-kerja/
+- Link dashboard: https://reporting.anemoneindonesia.com
 
 ## Contoh
 Report SPV:
