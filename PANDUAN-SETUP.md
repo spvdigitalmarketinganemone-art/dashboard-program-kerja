@@ -4,24 +4,20 @@ Akun GitHub: akun tim DM (spv.digitalmarketinganemone@gmail.com). Nama menu di G
 
 ## 1. Buat repo
 1. Login ke GitHub dengan akun tim DM.
-2. Buat repository baru, misalnya `dashboard-program-kerja`. Pilih **Private**.
+2. Buat repository baru, misalnya `dashboard-program-kerja`. Pilih **Private** (ubah ke Public hanya kalau memakai Opsi B).
 3. Upload semua isi folder ini (ekstrak dulu file zip-nya), termasuk folder `data/` dan `docs/`, lalu commit ke branch `main`.
 
 ## 2. Hosting dashboard
 Pilih salah satu.
 
-### Opsi A (disarankan, dipakai sekarang): Cloudflare Workers + Access — hanya tim yang bisa membuka
-Gratis, dan dashboard hanya bisa dibuka oleh email yang diizinkan.
+**Yang dipakai sekarang (sejak 5 Nov 2026): Opsi B, GitHub Pages.** Repo `spvdigitalmarketinganemone-art/dashboard-program-kerja` sudah **Public**, dan dashboard ada di https://spvdigitalmarketinganemone-art.github.io/dashboard-program-kerja/. Opsi A belum bisa dipakai karena paket Zero Trust Free butuh kartu untuk verifikasi.
 
-**Setup yang berjalan sekarang:**
-- Dashboard: https://dashboard-program-kerja.spv-digitalmarketinganemone.workers.dev
-- Preview per branch: `*-dashboard-program-kerja.spv-digitalmarketinganemone.workers.dev`
-- Worker `dashboard-program-kerja`, tersambung ke repo GitHub `spvdigitalmarketinganemone-art/dashboard-program-kerja`, branch `main`.
-- Build command: kosong (None). Deploy command: `npx wrangler deploy`. Root directory: `/`.
+### Opsi A (lebih aman, belum dipakai): Cloudflare Workers + Access — hanya tim yang bisa membuka
+Gratis, dan dashboard hanya bisa dibuka oleh email yang diizinkan. Paket Zero Trust Free tetap meminta kartu untuk verifikasi.
 
-**Langkah kalau perlu membuat ulang:**
+**Kalau dibuat (Cloudflare sekarang membuatnya sebagai Worker, bukan Pages):**
 1. Buat akun Cloudflare (gratis).
-2. Di menu **Workers & Pages**, buat project baru dan sambungkan ke repo GitHub `dashboard-program-kerja`. (Cloudflare sekarang membuatnya sebagai **Worker**, bukan Pages. Hasilnya sama.)
+2. Di menu **Workers & Pages**, buat project baru dan sambungkan ke repo GitHub `dashboard-program-kerja`.
 3. Pengaturan build: build command **dikosongkan**, deploy command `npx wrangler deploy`, root directory `/`.
 4. Setelah deploy, dashboard punya alamat `dashboard-program-kerja.<nama-akun>.workers.dev`.
 5. Di Worker tersebut buka **Settings → Domains & Routes**, lalu klik **Enable Access** di baris **Production** dan **Preview**. Keduanya harus aktif. Kalau masih tertulis "Anyone with this URL can visit", dashboard dan file data masih terbuka untuk publik.
@@ -29,11 +25,13 @@ Gratis, dan dashboard hanya bisa dibuka oleh email yang diizinkan.
 7. Tes di jendela incognito: halaman login Cloudflare harus muncul sebelum dashboard, dan email yang tidak terdaftar harus ditolak.
 8. Setiap kali bot menyimpan perubahan di GitHub, Cloudflare otomatis memperbarui dashboard dalam 1–2 menit.
 
-### Opsi B: GitHub Pages — siapa pun yang punya link bisa membuka
-Lebih sederhana, tapi **datanya terbuka**. Di paket GitHub gratis, GitHub Pages hanya bisa dipakai kalau repo-nya **Public**, artinya file data (budget, CPMQL) juga bisa dibaca siapa saja.
+### Opsi B (dipakai sekarang): GitHub Pages — siapa pun yang punya link bisa membuka
+Lebih sederhana, tapi **datanya terbuka**. Di paket GitHub gratis, GitHub Pages hanya bisa dipakai kalau repo-nya **Public**, artinya file data (budget, CPMQL), dokumen, dan seluruh riwayat commit juga bisa dibaca siapa saja.
 1. Ubah repo menjadi Public (Settings → General).
 2. Settings → **Pages** → Source: **Deploy from a branch**, branch `main`, folder `/ (root)`.
-3. Alamat dashboard: `https://<nama-akun>.github.io/dashboard-program-kerja/`.
+3. Alamat dashboard: https://spvdigitalmarketinganemone-art.github.io/dashboard-program-kerja/
+4. Setiap kali bot menyimpan perubahan di GitHub, GitHub Pages memperbarui dashboard dalam 1–2 menit.
+5. Worker Cloudflare lama (`dashboard-program-kerja.spv-digitalmarketinganemone.workers.dev`) tidak dipakai lagi. Hapus atau matikan Worker URL-nya di Cloudflare supaya tidak ada dua alamat dashboard.
 
 ## 3. Akses GitHub untuk bot
 1. Di akun GitHub tim DM: Settings → Developer settings → **Personal access tokens → Fine-grained tokens** → Generate new token.
