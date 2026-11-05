@@ -315,7 +315,6 @@ table.pk-table{width:100%;border-collapse:collapse;font-size:var(--cds-font-size
       <h3>Target hasil minggu ini: <span data-draw="kpi_week_label" data-source="kpi_mingguan">—</span></h3>
       <p class="pk-note">Angka kumulatif sejak awal periode. Aktual diisi tiap Jumat dari laporan tim. Periode data Senin–Minggu, mengikuti sheet benchmark.</p>
       <div class="pk-kpis" id="kpi-cards" data-draw="kpi_cards" data-source="kpi_mingguan"></div>
-      <p class="pk-note">Potensi Booking Fee minggu ini: <b data-draw="potensi_bf" data-source="kpi_mingguan" data-field="potensi_bf">—</b> <span data-draw="kendala_bf" data-source="kpi_mingguan" data-field="kendala_bf"></span></p>
       <p class="pk-note">Mulai 5 Nov, MQL = calon mitra yang modalnya siap (definisi baru hasil rapat sales). Angka sebelum 5 Nov memakai definisi lama. CPMQL dan Booking Fee/CPBF dinilai setara.</p>
       <h3>Target per role minggu ini</h3>
       <div class="pk-scroll">
@@ -324,6 +323,13 @@ table.pk-table{width:100%;border-collapse:collapse;font-size:var(--cds-font-size
           <tbody data-draw="table_role"></tbody>
         </table>
       </div>
+    </div>
+
+    <div class="pk-card" id="card-potensi-bf">
+      <h3>Potensi Booking Fee: <span data-draw="potensi_bf" data-source="kpi_mingguan" data-field="potensi_bf">—</span></h3>
+      <p class="pk-note">Calon mitra yang berpotensi bayar BF minggu ini, per kendala. Nama calon mitra tidak ditampilkan.</p>
+      <ul data-draw="kendala_bf" data-source="kpi_mingguan" data-field="kendala_bf"></ul>
+      <p class="pk-note">Sumber leads: <b data-draw="sumber_bf" data-source="kpi_mingguan" data-field="sumber_bf">—</b></p>
     </div>
 
     <div class="pk-grid">
@@ -580,12 +586,20 @@ dash.draw('kpi_week_label', (el) => {
 dash.draw('potensi_bf', (el) => {
   if (!okAll(['kpi_mingguan'])) { el.textContent = '—'; return; }
   const w = pickWeek(get('kpi_mingguan').data);
-  el.textContent = isNum(w.potensi_bf) ? num(w.potensi_bf) : 'belum dilaporkan';
+  el.textContent = isNum(w.potensi_bf) ? num(w.potensi_bf) + ' calon mitra' : 'belum dilaporkan';
+});
+dash.draw('sumber_bf', (el) => {
+  if (!okAll(['kpi_mingguan'])) { el.textContent = '—'; return; }
+  el.textContent = pickWeek(get('kpi_mingguan').data).sumber_bf || 'belum dilaporkan';
 });
 dash.draw('kendala_bf', (el) => {
-  if (!okAll(['kpi_mingguan'])) { el.textContent = ''; return; }
+  el.replaceChildren();
+  if (!okAll(['kpi_mingguan'])) return;
   const w = pickWeek(get('kpi_mingguan').data);
-  el.textContent = w.kendala_bf ? '(' + w.kendala_bf + ')' : '';
+  // kendala_bf ditulis bot sebagai "3 menunggu lokasi, 1 menyiapkan modal"
+  (w.kendala_bf ? w.kendala_bf.split(',').map((s) => s.trim()).filter(Boolean) : []).forEach((s) => {
+    const li = document.createElement('li'); li.textContent = s; el.appendChild(li);
+  });
 });
 dash.draw('kpi_cards', (el) => {
   if (!chartReady(el, ['kpi_mingguan'])) return;
