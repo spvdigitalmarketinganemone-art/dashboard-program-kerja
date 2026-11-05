@@ -144,8 +144,6 @@ Minggu kerja Senin–Sabtu. Minggu 1 hanya berisi pekerjaan prasyarat di akhir m
   *Selesai kalau:* Semua konten lolos checklist sebelum tayang · *KPI:* Kualitas konten
 
 ### Minggu 1 (5–7 Nov) — prasyarat
-- [ ] **SPV:** Kam 5 Nov 10:00 — Rapat program outlet & franchise organik. Bawa usulan mengganti posting Grand Opening per outlet dengan 1 Reels rekap per minggu (detail outlet ke Story/Highlight), dan minta persetujuan Franchise Support  
-  *Selesai kalau:* Program outlet & franchise organik yang disepakati tercatat · *KPI:* Program outlet & franchise
 - [ ] **SPV:** Kam 5 atau Jum 6 Nov — Rapat dengan sales: samakan definisi Warm & Hot leads, sepakati alur umpan balik dua arah, serta pencatatan alasan leads tidak lanjut, kecepatan respon, dan hasil closing. Minta rekap MQL Oktober per campaign paling lambat Selasa 10 Nov  
   *Selesai kalau:* Kesepakatan tertulis soal definisi Warm & Hot, alur umpan balik, dan cara mencatat alasan tidak lanjut, kecepatan respon, closing; sales setuju setor rekap MQL Oktober per campaign Sel 10 Nov · *KPI:* MQL, No Response, BF
 - [ ] **SPV:** Jum 6 Nov 10:00 — Petakan target 2027, sekaligus pastikan status Budgeting 2027 & Program  
