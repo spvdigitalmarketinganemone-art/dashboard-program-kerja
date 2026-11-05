@@ -132,10 +132,10 @@ Minggu kerja Senin–Sabtu. Minggu 1 hanya berisi pekerjaan prasyarat di akhir m
   *Selesai kalau:* Laporan Jumat memuat ketiga angka itu · *KPI:* MQL, BF, CPBF
 - [ ] **Paid Ads:** Tiap Jumat (mulai 13 Nov): rangkum alasan leads tidak lanjut, lalu perbaiki iklan atau targeting  
   *Selesai kalau:* 3 alasan teratas dan perbaikan yang sudah dijalankan · *KPI:* MQL, No Response
-- [ ] **CC:** 1 Reels Isu Pendidikan per minggu, ikut isu terkini (SPMB, kurikulum, rapor)  
-  *Selesai kalau:* Tayang tiap minggu · *KPI:* Views, Followers
-- [ ] **CC:** 2 Reels Edukasi per minggu, angkat masalah nyata orang tua  
-  *Selesai kalau:* Tayang tiap minggu · *KPI:* Views, Followers
+- [ ] **CC:** Reels Isu Pendidikan: ikut isu terkini (SPMB, kurikulum, rapor)  
+  *Selesai kalau:* Jumlah yang tayang sesuai target CC minggu itu · *KPI:* Views, Followers
+- [ ] **CC:** Reels Edukasi: angkat masalah nyata orang tua  
+  *Selesai kalau:* Jumlah yang tayang sesuai target CC minggu itu · *KPI:* Views, Followers
 - [ ] **SMS:** Posting Grand Opening tiap outlet sesuai tanggal GO-nya  
   *Selesai kalau:* Setiap outlet yang GO sudah terposting di tanggal GO-nya · *KPI:* Views
 - [ ] **SMS:** Tayangkan konten unggulan (Isu Pendidikan, Edukasi) di Kamis–Jumat  
@@ -176,22 +176,20 @@ Minggu kerja Senin–Sabtu. Minggu 1 hanya berisi pekerjaan prasyarat di akhir m
   *Selesai kalau:* Jadwal jadi dan brief Minggu 3 diterima CC Rab 11 Nov · *KPI:* Views, Followers
 - [ ] **SMS:** Samakan cara hitung "interaksi" dan sambungkan Facebook ke Dashboard KPI  
   *Selesai kalau:* Definisi tertulis dan Facebook terhubung · *KPI:* Views, Akurasi data
-- [ ] **CC:** Tambah 3 kolom tanggal di Kanban: brief diterima, draf dikirim, tayang  
-  *Selesai kalau:* Kolom ada dan terisi sejak 9 Nov · *KPI:* Ketepatan brief
+- [ ] **CC:** Isi tanggal brief masuk, draf dikirim, dan tayang di setiap konten di Kanban  
+  *Selesai kalau:* Semua konten sejak 9 Nov sudah ada tanggalnya · *KPI:* Ketepatan brief
 - [ ] **SMS, CC:** Sepakati berapa konten TikTok yang dibuat khusus dan berapa yang adaptasi dari IG  
   *Selesai kalau:* Jumlahnya disepakati dan dicatat · *KPI:* Views
 - [ ] **CC:** Kumpulkan hook dari konten IG terbaik sebagai acuan script  
   *Selesai kalau:* Min. 10 contoh hook tercatat · *KPI:* Views
-- [ ] **CC:** Produksi konten slot bebas Minggu 2 sesuai brief SMS  
-  *Selesai kalau:* 1 konten tayang di Minggu 2 · *KPI:* Followers, MQL
 - [ ] **Pihak lain:** Mas Dwi: cari cara tracking CTWA di WA Business cabang tanpa menambah kerja cabang  
   *Selesai kalau:* Usulan tertulis · *KPI:* MQL (uji coba Desember)
 - [ ] **Paid Ads:** Capai target Minggu 2 (kumulatif per 15 Nov)  
   *Selesai kalau:* MQL ≥ 16 · CPMQL ≤ Rp 375 rb · No Response ≤ 62% · BF ≥ 2 · CPBF ≤ Rp 2,5 jt · *KPI:* MQL, CPMQL, No Response, BF
 - [ ] **SMS:** Capai target organik Minggu 2 (per 15 Nov)  
   *Selesai kalau:* Views kumulatif ≥ 50 rb · followers bersih ≥ +350 · *KPI:* Views, Followers
-- [ ] **CC:** Capai target produksi Minggu 2  
-  *Selesai kalau:* Tayang 1 Reels Isu Pendidikan + 2 Reels Edukasi + 1 konten slot bebas · *KPI:* Views
+- [ ] **CC:** Upload 4 Reels + 1 Carousel atau 3 Reels + 2 Carousel di Minggu 2 (isi sesuai brief SMS)  
+  *Selesai kalau:* Reels tayang di IG Anemone Indonesia, IG Life at Anemone, TikTok, dan YT Shorts; Carousel tayang di IG Anemone Indonesia, IG Life at Anemone, dan TikTok · *KPI:* Views
 
 ### Minggu 3–5
 To-do Minggu 3, 4, dan 5 disusun menyesuaikan hasil tiap minggu, menyusul setelah evaluasi mingguan.
