@@ -62,7 +62,7 @@
   "kpi": "MQL, No Response",
   "dampak": "Alasan leads tidak lanjut terkumpul untuk perbaikan iklan di Minggu 4",
   "hasil_aktual": null,
-  "catatan": null
+  "catatan": "Pencatatan alasan tidak lanjut diupdate di Dashboard KPI Digital"
  },
  {
   "id": "t53",
@@ -159,14 +159,14 @@
   "id": "t07",
   "minggu": "1",
   "pic": "SPV",
-  "todo": "Kam 5/Jum 6 Nov: rapat dengan sales untuk samakan definisi Warm & Hot, alur umpan balik, dan cara catat alasan leads tidak lanjut. Minta rekap MQL Oktober per campaign (maks. Sel 10 Nov)",
+  "todo": "Kam 5/Jum 6 Nov: rapat dengan sales untuk samakan definisi Warm & Hot, alur umpan balik, dan cara catat alasan leads tidak lanjut. Rekap MQL Oktober per campaign dibaca dari Dashboard KPI Digital",
   "status": "Selesai",
   "jenis": "Fondasi",
-  "selesai_kalau": "Kesepakatan tertulis, dan sales setuju setor rekap Sel 10 Nov",
+  "selesai_kalau": "Kesepakatan tertulis, dan alur umpan balik, pencatatan alasan, serta sumber rekap MQL Oktober sudah jelas",
   "kpi": "MQL, No Response, BF",
   "dampak": "Tim dan sales memakai definisi yang sama, sehingga MQL dan closing bisa dilacak dari iklan",
   "hasil_aktual": "Definisi disepakati 5 Nov: Warm = aktif ngobrol tapi masih terkendala modal/lokasi/lainnya; Hot/MQL = modal siap",
-  "catatan": "Belum dibahas: alur umpan balik, pencatatan alasan tidak lanjut, kecepatan respon & closing, rekap MQL Oktober per campaign"
+  "catatan": "Alur disepakati 6 Nov: umpan balik leads tiap Jumat; pencatatan alasan tidak lanjut diupdate di Dashboard KPI Digital; rekap MQL Oktober per campaign ada di Dashboard KPI Digital; kecepatan respon dan closing diupdate tiap Sabtu lewat recap Compass"
  },
  {
   "id": "t08",
@@ -751,6 +751,6 @@
   "kpi": "Kecepatan respon, MQL, BF",
   "dampak": "Target indikator baru bisa ditetapkan untuk Desember",
   "hasil_aktual": null,
-  "catatan": null
+  "catatan": "Kecepatan respon dan hasil closing diupdate tiap Sabtu lewat recap Compass; rekap MQL Oktober ada di Dashboard KPI Digital"
  }
 ]
