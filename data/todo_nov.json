@@ -221,19 +221,6 @@
   "catatan": null
  },
  {
-  "id": "t13",
-  "minggu": "1",
-  "pic": "Paid Ads",
-  "todo": "Jum 6–Sab 7 Nov: buat draf 1 halaman hasil rapat sales untuk dikoreksi SPV",
-  "status": "Selesai",
-  "jenis": "Fondasi",
-  "selesai_kalau": "Draf terkirim ke SPV Sab 7 Nov pagi",
-  "kpi": "MQL, No Response",
-  "dampak": "Dokumen resmi cepat jadi tanpa menambah beban SPV",
-  "hasil_aktual": null,
-  "catatan": null
- },
- {
   "id": "t15",
   "minggu": "1",
   "pic": "Paid Ads",
