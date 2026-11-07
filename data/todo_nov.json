@@ -173,12 +173,12 @@
   "minggu": "1",
   "pic": "SPV",
   "todo": "Jum 6 Nov 10:00: petakan target 2027 dan cek status Budgeting 2027",
-  "status": "Belum",
+  "status": "Proses",
   "jenis": "Fondasi",
   "selesai_kalau": "Draf target 2027 jadi, status budgeting diketahui",
   "kpi": "Target & budget 2027",
   "dampak": "Siap dipresentasikan sebelum budget ditetapkan tanggal 25",
-  "hasil_aktual": null,
+  "hasil_aktual": "80% selesai. Sisa: presentasi detail target dan program 2027",
   "catatan": null
  },
  {
