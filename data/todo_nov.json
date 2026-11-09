@@ -739,5 +739,31 @@
   "dampak": "Target indikator baru bisa ditetapkan untuk Desember",
   "hasil_aktual": null,
   "catatan": "Kecepatan respon dan hasil closing diupdate tiap Sabtu lewat recap Compass; rekap MQL Oktober ada di Dashboard KPI Digital"
+ },
+ {
+  "id": "t72",
+  "minggu": "2",
+  "pic": "SMS",
+  "todo": "Sen 9 Nov: buat analisa performa konten minggu lalu",
+  "status": "Belum",
+  "jenis": "Langsung",
+  "selesai_kalau": "Hasil analisa tertulis",
+  "kpi": "Views, Followers",
+  "dampak": "Jadi dasar arah strategi konten Selasa",
+  "hasil_aktual": null,
+  "catatan": null
+ },
+ {
+  "id": "t73",
+  "minggu": "2",
+  "pic": "SMS",
+  "todo": "Sel 10 Nov: susun arah strategi konten minggu berikutnya (berdasarkan analisa Senin); serahkan ke CC paling lambat 15.00",
+  "status": "Belum",
+  "jenis": "Langsung",
+  "selesai_kalau": "Arah strategi minggu depan diterima CC Sel 10 Nov sebelum 15.00",
+  "kpi": "Views, Followers",
+  "dampak": "Bahan brief Minggu 3 yang dikirim ke CC Rab 11 Nov",
+  "hasil_aktual": null,
+  "catatan": null
  }
 ]
