@@ -303,13 +303,13 @@
   "minggu": "2",
   "pic": "SMS",
   "todo": "Ambil data durasi tonton dan violation Oktober; cek video TikTok yang dobel",
-  "status": "Belum",
+  "status": "Proses",
   "jenis": "Fondasi",
   "selesai_kalau": "Data per akun tercatat, video dobel ketemu",
   "kpi": "Views, Violation",
   "dampak": "Ada patokan resmi untuk mengukur perbaikan hook dan durasi",
-  "hasil_aktual": null,
-  "catatan": null
+  "hasil_aktual": "Durasi tonton TikTok Oktober: rata-rata ditonton 8,8 detik dari durasi video rata-rata 75,7 detik (12,4% dari durasi); 13 dari 16 video berdurasi lebih dari 60 detik. Violation TikTok Oktober: 3 video terkena pembatasan (2 tidak eligible For You, 1 dihapus); pasal yang spesifik belum disebut TikTok. Kandidat video dobel: 2 video Oktober berdurasi persis sama dengan video lama",
+  "catatan": "Belum selesai: 2 kandidat video dobel perlu dicek manual sebelum disimpulkan dobel, dan pasal violation belum diketahui. Sumber: ringkasan temuan yang dikirim Mas Dias 11 Nov (tangkapan layar)"
  },
  {
   "id": "t26",
