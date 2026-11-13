@@ -290,13 +290,13 @@
   "minggu": "2",
   "pic": "SMS",
   "todo": "Catat followers semua akun per 1 Nov sebagai angka awal",
-  "status": "Belum",
+  "status": "Proses",
   "jenis": "Fondasi",
   "selesai_kalau": "Angka awal 5 akun tercatat",
   "kpi": "Followers",
   "dampak": "Target followers 30 Nov punya titik awal yang jelas",
-  "hasil_aktual": null,
-  "catatan": null
+  "hasil_aktual": "Followers dari laporan sosmed (data ditarik 11 Nov): IG anemone.indonesia 16.016 (11 Nov), net +67 pada 1-9 Nov; IG lifeatanemone 2.569 (11 Nov), net +7 pada 1-9 Nov; TikTok 3.837 (9 Nov), -4 pada 1-9 Nov; YouTube 4.040 (10 Nov, dibulatkan YouTube jadi 4.040-4.049), +3 pada 1-8 Nov. Facebook: tidak ada angka.",
+  "catatan": "Belum selesai: yang tercatat total terbaru dan perubahannya, bukan angka awal per 1 Nov. Instagram tidak menyimpan histori total harian, jadi total per tanggal tidak bisa direkonstruksi. Facebook belum ada. Tanggal data tiap akun beda (9, 10, 11 Nov). Sumber: laporan sosmed yang dikirim Mas Dias 13 Nov"
  },
  {
   "id": "t25",
@@ -308,8 +308,8 @@
   "selesai_kalau": "Data per akun tercatat, video dobel ketemu",
   "kpi": "Views, Violation",
   "dampak": "Ada patokan resmi untuk mengukur perbaikan hook dan durasi",
-  "hasil_aktual": "Durasi tonton TikTok Oktober: rata-rata ditonton 8,8 detik dari durasi video rata-rata 75,7 detik (12,4% dari durasi); 13 dari 16 video berdurasi lebih dari 60 detik. Violation TikTok Oktober: 3 video terkena pembatasan (2 tidak eligible For You, 1 dihapus); pasal yang spesifik belum disebut TikTok. Kandidat video dobel: 2 video Oktober berdurasi persis sama dengan video lama",
-  "catatan": "Belum selesai: 2 kandidat video dobel perlu dicek manual sebelum disimpulkan dobel, dan pasal violation belum diketahui. Sumber: ringkasan temuan yang dikirim Mas Dias 11 Nov (tangkapan layar)"
+  "hasil_aktual": "Durasi tonton TikTok Oktober (16 video, 1-31 Okt, akumulasi sampai 11 Nov): total views 6.110; rata-rata ditonton 8,8 detik dari durasi rata-rata 75,7 detik (12,4%); ditonton sampai habis 1,3%; 13 dari 16 video berdurasi lebih dari 60 detik. Pembatasan: 3 video diposting 15-17 Okt. 2 tidak eligible For You (15 Okt Background pendidikan itu bonus, 96 views; 16 Okt Fondasi literasi sejak dini, 103 views; TikTok tidak menyebut alasan di halaman analytics). 1 dihapus (17 Okt Outlet Gresik ke-317; Community Guidelines tanpa rincian pasal). Kandidat video dobel: 2 video Oktober berdurasi persis sama dengan video lama",
+  "catatan": "Belum selesai: 2 kandidat video dobel perlu dicek manual sebelum disimpulkan dobel; kategori kebijakan dari banner kuning TikTok Studio belum dicatat; banding belum diajukan. Data pembatasan dari tangkapan layar TikTok Studio, bukan Supermetrics. Sumber: laporan sosmed yang dikirim Mas Dias 13 Nov"
  },
  {
   "id": "t26",
