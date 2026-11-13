@@ -316,26 +316,26 @@
   "minggu": "2",
   "pic": "SMS",
   "todo": "Susun jadwal konten sisa November (IG 5/minggu, unggulan di Kamis–Jumat); kirim brief Minggu 3 ke CC Rab 11 Nov",
-  "status": "Belum",
+  "status": "Proses",
   "jenis": "Langsung",
   "selesai_kalau": "Jadwal jadi dan brief Minggu 3 diterima CC Rab 11 Nov",
   "kpi": "Views, Followers",
   "dampak": "Views kumulatif ≥ 50 rb per 15 Nov",
-  "hasil_aktual": null,
-  "catatan": null
+  "hasil_aktual": "Jadwal konten November sudah tersusun di Google Doc \"Strategi Social Media_November 2026\", tab Content Plan: Minggu 1-4 (3-27 Nov) dengan tanggal, platform, topik, arah konten, dan target tiap konten. Slot IG Anemone Indonesia 9 konten (5 Reels + 4 desain), TikTok 3, Life at Anemone 4.",
+  "catatan": "Belum selesai: (1) brief Minggu 3 diterima CC Rab 11 Nov belum ada buktinya; (2) jadwal belum ada untuk 28-30 Nov; (3) isi jadwal 2 konten IG per minggu (9 per bulan), beda dari to-do ini (IG 5 per minggu). Sumber: laporan SMS yang dikirim Mas Dias 13 Nov, https://docs.google.com/document/d/1wFB6nP1o-ceZOsbiY23xrbdB_BgcK36AvTClfCOlCCg/edit"
  },
  {
   "id": "t28",
   "minggu": "2",
   "pic": "SMS",
   "todo": "Samakan cara hitung \"interaksi\" dan sambungkan Facebook ke Dashboard KPI",
-  "status": "Belum",
+  "status": "Proses",
   "jenis": "Fondasi",
   "selesai_kalau": "Definisi tertulis dan Facebook terhubung",
   "kpi": "Views, Akurasi data",
   "dampak": "Angka views dan interaksi lengkap untuk 5 akun",
-  "hasil_aktual": null,
-  "catatan": null
+  "hasil_aktual": "Cara hitung interaksi Facebook: diambil langsung dari data Meta (laporan SMS, 13 Nov).",
+  "catatan": "Belum selesai: definisi interaksi untuk semua akun belum tertulis, dan Facebook belum terbukti tersambung ke Dashboard KPI. Sumber: laporan SMS yang dikirim Mas Dias 13 Nov"
  },
  {
   "id": "t29",
