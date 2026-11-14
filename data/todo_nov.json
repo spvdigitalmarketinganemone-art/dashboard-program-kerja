@@ -238,52 +238,52 @@
   "minggu": "2",
   "pic": "Paid Ads",
   "todo": "Pasang pertanyaan pembuka chat WA baru (tanya modal dulu, lalu kota) dan kecualikan audiens tidak relevan (cari les, cari kerja)",
-  "status": "Belum",
+  "status": "Selesai",
   "jenis": "Langsung",
   "selesai_kalau": "Aktif di semua iklan Ads Franchise maks. Rab 11 Nov",
   "kpi": "No Response, MQL",
   "dampak": "No Response turun ke ≤ 58% di Minggu 3",
-  "hasil_aktual": null,
-  "catatan": null
+  "hasil_aktual": "Pertanyaan pembuka chat WA baru (tanya modal dulu, lalu kota) dan pengecualian audiens tidak relevan sudah diganti, menurut laporan tim Paid Ads.",
+  "catatan": "Belum diverifikasi di Ads Manager: tanggal pasang dan cakupan semua iklan Ads Franchise tidak disebut (batas Rab 11 Nov). Sumber: laporan tim Paid Ads yang dikirim Mas Dias 14 Nov"
  },
  {
   "id": "t20",
   "minggu": "2",
   "pic": "Paid Ads",
   "todo": "Simpan template kolom Meta Ads, tarik ulang data Oktober Meta & TikTok Ads",
-  "status": "Belum",
+  "status": "Proses",
   "jenis": "Fondasi",
   "selesai_kalau": "Template tersimpan, data Oktober lengkap",
   "kpi": "CPMQL",
   "dampak": "Ranking creative dan hook rate bisa dipakai untuk keputusan Minggu 4",
-  "hasil_aktual": null,
-  "catatan": null
+  "hasil_aktual": "Sheet \"Best Ad Creative Oktober 2026\" berisi 21 baris iklan (20 Meta Ads, 1 TikTok) dengan kolom spend, impression, CPM, result, MQL, cost per MQL, purchase, dan hook rate. Total spend 20 iklan Meta Rp 11.168.465 dan MQL 10, sama dengan angka Meta Ads di sheet Daftar Selisih Oktober.",
+  "catatan": "Belum selesai: template kolom Meta Ads tersimpan belum terbukti, dan TikTok Ads hanya 1 baris (spend Rp 709.390), belum jelas lengkap. 6 iklan tanpa data hook rate. Sheet: https://docs.google.com/spreadsheets/d/1chx_ITS1W6ACvu1qeUfpNRNXRnwl6oYLi3ao3j4qwTs/edit . Sumber: laporan tim Paid Ads yang dikirim Mas Dias 14 Nov"
  },
  {
   "id": "t22",
   "minggu": "2",
   "pic": "Paid Ads",
   "todo": "Pantau biaya iklan harian selama promo 11.11",
-  "status": "Belum",
+  "status": "Proses",
   "jenis": "Pemantauan",
   "selesai_kalau": "Biaya harian 10–12 Nov tercatat; ada tindakan kalau CPMQL > Rp 420 rb",
   "kpi": "CPMQL",
   "dampak": "CPMQL tidak melonjak selama 11.11",
-  "hasil_aktual": null,
-  "catatan": null
+  "hasil_aktual": "Kumulatif 10 Nov: spend Rp 4.059.049, CPM Rp 16.752, cost per MQL Rp 2.029.525. Kumulatif 11 Nov: spend Rp 4.285.033, CPM Rp 15.087, cost per MQL Rp 2.142.517. Selisih spend 10 ke 11 Nov: Rp 225.984. Cost per MQL sama dengan spend dibagi 2 MQL di kedua tanggal.",
+  "catatan": "Belum selesai: biaya 12 Nov belum ada. Cost per MQL Rp 2,14 jt jauh di atas batas tindakan Rp 420 rb, dan tindakan tim belum dilaporkan. Titik awal hitungan kumulatif tidak disebut. Sumber: laporan tim Paid Ads yang dikirim Mas Dias 14 Nov"
  },
  {
   "id": "t23",
   "minggu": "2",
   "pic": "Paid Ads",
   "todo": "Cek data yang beda dengan baseline Oktober, laporkan ke SPV",
-  "status": "Belum",
+  "status": "Proses",
   "jenis": "Fondasi",
   "selesai_kalau": "Daftar selisih dan penjelasannya terkirim ke SPV",
   "kpi": "Akurasi data",
   "dampak": "Angka baseline Oktober tinggal satu versi",
-  "hasil_aktual": null,
-  "catatan": null
+  "hasil_aktual": "Sheet \"Selisih Baseline Oktober 2026 - Paid Ads\" (tab Daftar Selisih) memuat 7 metrik: Spend (Meta Rp 11.168.465 vs KPI Rp 15.191.565), Leads (Meta 352 vs KPI 428 vs GASS 405), MQL (10 vs 26 vs 21), Booking Fee (3, 3, 3), CPL (32.279 vs 36.518), CPMQL (1.116.847 vs 584.291), CPBF (3.722.822 vs 5.063.855), masing-masing dengan penyebab dan usulan tindakan. Progress 75% menurut tim.",
+  "catatan": "Belum selesai (75%). Perlu keputusan SPV: spend resmi net atau gross up, definisi MQL resmi, dan BF Oktober 3 atau 4. Temuan saya: sel Leads Meta tertulis 352, tapi penjelasan dan CPL memakai 346 (spend dibagi 346 = 32.279); kalau 346, selisih jadi -82, bukan -76. Sheet: https://docs.google.com/spreadsheets/d/1cMn4UVsAs4tmSMhiZIR0QCecGDdg6th-1tYXK7-wAHo/edit . Sumber: laporan tim Paid Ads yang dikirim Mas Dias 14 Nov"
  },
  {
   "id": "t24",
