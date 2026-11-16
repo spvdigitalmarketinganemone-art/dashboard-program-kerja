@@ -765,5 +765,57 @@
   "dampak": "Bahan brief Minggu 3 yang dikirim ke CC Rab 11 Nov",
   "hasil_aktual": null,
   "catatan": "Minggu 2 hanya sebagai catatan; mulai dipakai sungguhan di Minggu 3"
+ },
+ {
+  "id": "t74",
+  "minggu": "5",
+  "pic": "Paid Ads",
+  "todo": "Turunkan No Response bertahap sampai maksimal 50% di akhir November: tutup leads yang tidak membalas (pertanyaan pembuka chat, targeting, kualitas leads) bersama sales",
+  "status": "Belum",
+  "jenis": "Target",
+  "selesai_kalau": "No Response kumulatif ≤ 50% per 6 Des, dengan jalur ≤ 58% (Minggu 3), ≤ 54% (Minggu 4), ≤ 50% (Minggu 5)",
+  "kpi": "No Response, MQL",
+  "dampak": "Lebih banyak leads yang dibalas sehingga MQL naik tanpa menambah biaya iklan",
+  "hasil_aktual": null,
+  "catatan": "Angka awal: No Response 56,76% di Minggu 1. Ditambahkan atas permintaan Mas Dias 16 Nov. 'Minimal 50%' diartikan maksimal 50%, karena makin rendah makin baik. Terkait t05, t41, t42"
+ },
+ {
+  "id": "t75",
+  "minggu": "3",
+  "pic": "Paid Ads",
+  "todo": "Capai target Minggu 3 (kumulatif per 22 Nov)",
+  "status": "Belum",
+  "jenis": "Langsung",
+  "selesai_kalau": "MQL ≥ 24 · CPMQL ≤ Rp 375 rb · No Response ≤ 58% · BF ≥ 3 · CPBF ≤ Rp 2,5 jt",
+  "kpi": "MQL, CPMQL, No Response, BF",
+  "dampak": "Pacing Ads Franchise sesuai jalur ke 39 MQL",
+  "hasil_aktual": null,
+  "catatan": "Target dari kpi_mingguan Minggu 3. Ditambahkan atas permintaan Mas Dias 16 Nov"
+ },
+ {
+  "id": "t76",
+  "minggu": "3",
+  "pic": "SMS",
+  "todo": "Capai target organik Minggu 3 (per 22 Nov)",
+  "status": "Belum",
+  "jenis": "Langsung",
+  "selesai_kalau": "Views kumulatif ≥ 73 rb · followers bersih ≥ +514",
+  "kpi": "Views, Followers",
+  "dampak": "Sesuai jalur ke 100 rb views dan +700 followers",
+  "hasil_aktual": null,
+  "catatan": "Target dari kpi_mingguan Minggu 3. Ditambahkan atas permintaan Mas Dias 16 Nov"
+ },
+ {
+  "id": "t77",
+  "minggu": "3",
+  "pic": "CC",
+  "todo": "Tayangkan konten Minggu 3: 1 Reels Isu Pendidikan + 2 Reels Edukasi + 1 konten slot bebas (isi sesuai brief SMS)",
+  "status": "Belum",
+  "jenis": "Langsung",
+  "selesai_kalau": "4 konten tayang di akun sesuai brief SMS sampai 22 Nov",
+  "kpi": "Views",
+  "dampak": "Jadwal konten Minggu 3 terpenuhi",
+  "hasil_aktual": null,
+  "catatan": "Target dari kpi_mingguan Minggu 3 (target_cc). Ditambahkan atas permintaan Mas Dias 16 Nov"
  }
 ]
