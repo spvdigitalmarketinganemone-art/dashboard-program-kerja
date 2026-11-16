@@ -817,5 +817,70 @@
   "dampak": "Jadwal konten Minggu 3 terpenuhi",
   "hasil_aktual": null,
   "catatan": "Target dari kpi_mingguan Minggu 3 (target_cc). Ditambahkan atas permintaan Mas Dias 16 Nov"
+ },
+ {
+  "id": "t78",
+  "minggu": "3",
+  "pic": "Paid Ads",
+  "todo": "Rapikan atribusi MQL per campaign bersama sales dan GASS, supaya asal tiap MQL jelas",
+  "status": "Belum",
+  "jenis": "Fondasi",
+  "selesai_kalau": "Tiap MQL tercatat asal campaign-nya dan angkanya cocok dengan GASS",
+  "kpi": "MQL, CPMQL",
+  "dampak": "CPMQL per campaign bisa dipakai untuk memindahkan budget",
+  "hasil_aktual": null,
+  "catatan": "Ditambahkan atas permintaan Mas Dias 16 Nov dari target besar per role"
+ },
+ {
+  "id": "t79",
+  "minggu": "3",
+  "pic": "Paid Ads",
+  "todo": "Hitung ulang CPMQL dengan biaya dan MQL di periode yang sama, lalu lapor biaya dan MQL kumulatif tiap Senin",
+  "status": "Belum",
+  "jenis": "Pemantauan",
+  "selesai_kalau": "Biaya, MQL, dan CPMQL kumulatif per minggu tercatat dengan periode yang jelas",
+  "kpi": "MQL, CPMQL",
+  "dampak": "Pacing ke target 39 MQL terlihat jelas tiap minggu",
+  "hasil_aktual": null,
+  "catatan": "Ditambahkan atas permintaan Mas Dias 16 Nov dari target besar per role"
+ },
+ {
+  "id": "t80",
+  "minggu": "3",
+  "pic": "SMS",
+  "todo": "Tuntaskan perbaikan TikTok: cek 2 kandidat video dobel, catat kategori pembatasan di TikTok Studio, ajukan banding video Gresik",
+  "status": "Belum",
+  "jenis": "Langsung",
+  "selesai_kalau": "2 kandidat dobel dicek, kategori pembatasan tercatat, banding diajukan",
+  "kpi": "Views, Violation",
+  "dampak": "0 violation sampai akhir bulan",
+  "hasil_aktual": null,
+  "catatan": "Ditambahkan atas permintaan Mas Dias 16 Nov dari target besar per role"
+ },
+ {
+  "id": "t81",
+  "minggu": "3",
+  "pic": "CC",
+  "todo": "Terapkan cek sebelum posting: izin dan cara menampilkan anak, tidak memakai footage pihak lain, label konten AI",
+  "status": "Belum",
+  "jenis": "Rutin",
+  "selesai_kalau": "Semua konten Minggu 3 lolos cek sebelum tayang",
+  "kpi": "Violation",
+  "dampak": "Tidak ada teguran TikTok baru",
+  "hasil_aktual": null,
+  "catatan": "Ditambahkan atas permintaan Mas Dias 16 Nov dari target besar per role"
+ },
+ {
+  "id": "t82",
+  "minggu": "3",
+  "pic": "SPV",
+  "todo": "Putuskan definisi resmi: spend net atau gross up, MQL (GASS atau Hot Leads), dan BF Oktober 3 atau 4",
+  "status": "Belum",
+  "jenis": "Fondasi",
+  "selesai_kalau": "Tiga definisi diputuskan dan tertulis",
+  "kpi": "MQL, CPMQL, BF",
+  "dampak": "Selisih baseline Oktober bisa ditutup dan CPMQL punya patokan",
+  "hasil_aktual": null,
+  "catatan": "Ditambahkan atas permintaan Mas Dias 16 Nov dari target besar per role"
  }
 ]
