@@ -399,8 +399,8 @@
   "selesai_kalau": "MQL ≥ 16 · CPMQL ≤ Rp 375 rb · No Response ≤ 62% · BF ≥ 2 · CPBF ≤ Rp 2,5 jt",
   "kpi": "MQL, CPMQL, No Response, BF",
   "dampak": "Pacing Ads Franchise sesuai jalur ke 39 MQL",
-  "hasil_aktual": "Dashboard leads: 170 leads (4 PIC sales); No Response 102 leads = 60,0% (target ≤62%, tercapai); Warm 58 (34,1%); Hot 7 (4,1%); Total Closing 0. Dari Paid Ads per 11 Nov: biaya kumulatif Rp 4.285.033, cost per MQL Rp 2.142.517.",
-  "catatan": "Belum selesai: MQL Hot 7 (dashboard leads) beda dengan MQL 2 hasil hitung dari laporan Paid Ads (hanya yang teratribusi ke campaign Meta), definisi dan angka resmi perlu dikonfirmasi; CPMQL jauh di atas Rp 375 rb; BF dan CPBF belum ada. Sumber: tangkapan layar dashboard leads dan total view organik yang dikirim Mas Dias 16 Nov; tanggal data tidak tertera"
+  "hasil_aktual": "Dashboard leads: 170 leads (4 PIC sales); No Response 102 leads = 60,0% (target ≤62%, tercapai); Warm 58 (34,1%); Total Closing 0. MQL (Hot Leads) Minggu 2 = 5 menurut konfirmasi Mas Dias 16 Nov (target ≥16). Dari Paid Ads per 11 Nov: biaya kumulatif Rp 4.285.033, cost per MQL Rp 2.142.517.",
+  "catatan": "Belum selesai: MQL 5 dari target 16; CPMQL Rp 2.142.517 dari laporan Paid Ads per 11 Nov (dihitung dari MQL lebih sedikit, perlu dihitung ulang dengan biaya dan MQL di periode yang sama); BF dan CPBF belum ada. Sumber: tangkapan layar dashboard leads dan konfirmasi Mas Dias 16 Nov"
  },
  {
   "id": "t70",
