@@ -394,26 +394,26 @@
   "minggu": "2",
   "pic": "Paid Ads",
   "todo": "Capai target Minggu 2 (kumulatif per 15 Nov)",
-  "status": "Belum",
+  "status": "Proses",
   "jenis": "Langsung",
   "selesai_kalau": "MQL ≥ 16 · CPMQL ≤ Rp 375 rb · No Response ≤ 62% · BF ≥ 2 · CPBF ≤ Rp 2,5 jt",
   "kpi": "MQL, CPMQL, No Response, BF",
   "dampak": "Pacing Ads Franchise sesuai jalur ke 39 MQL",
-  "hasil_aktual": null,
-  "catatan": null
+  "hasil_aktual": "Dashboard leads: 170 leads (4 PIC sales); No Response 102 leads = 60,0% (target ≤62%, tercapai); Warm 58 (34,1%); Hot 7 (4,1%); Total Closing 0. Dari Paid Ads per 11 Nov: biaya kumulatif Rp 4.285.033, cost per MQL Rp 2.142.517.",
+  "catatan": "Belum selesai: MQL Hot 7 (dashboard leads) beda dengan MQL 2 hasil hitung dari laporan Paid Ads (hanya yang teratribusi ke campaign Meta), definisi dan angka resmi perlu dikonfirmasi; CPMQL jauh di atas Rp 375 rb; BF dan CPBF belum ada. Sumber: tangkapan layar dashboard leads dan total view organik yang dikirim Mas Dias 16 Nov; tanggal data tidak tertera"
  },
  {
   "id": "t70",
   "minggu": "2",
   "pic": "SMS",
   "todo": "Capai target organik Minggu 2 (per 15 Nov)",
-  "status": "Belum",
+  "status": "Proses",
   "jenis": "Langsung",
   "selesai_kalau": "Views kumulatif ≥ 50 rb · followers bersih ≥ +350",
   "kpi": "Views, Followers",
   "dampak": "Sesuai jalur ke 100 rb views dan +700 followers",
-  "hasil_aktual": null,
-  "catatan": null
+  "hasil_aktual": "Total view organik November 29.000 (akumulasi 5 akun). Target Minggu 2: ≥50 rb, capaian sekitar 58%. Followers bersih belum ada angkanya.",
+  "catatan": "Belum tercapai per data ini. Followers bersih Minggu 2 MISSING. Sumber: tangkapan layar dashboard leads dan total view organik yang dikirim Mas Dias 16 Nov; tanggal data tidak tertera"
  },
  {
   "id": "t71",
